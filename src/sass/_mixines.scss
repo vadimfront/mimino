@@ -1,0 +1,34 @@
+$screen-xs: 320px;
+$screen-sm: 480px;
+$screen-sm-plus: 481px;
+$screen-md: 768px;
+$screen-md-plus: 769px;
+$screen-lg: 1360px;
+
+@mixin respond($media) {
+  @if $media == xs {
+    @media only screen and (min-width: $screen-xs) {
+      @content;
+    }
+  } @else if $media == sm-plus {
+    @media only screen and (min-width: $screen-sm-plus) {
+      @content;
+    }
+  } @else if $media == sm {
+    @media only screen and (min-width: $screen-sm) {
+      @content;
+    }
+  } @else if $media == md {
+    @media only screen and (min-width: $screen-md) {
+      @content;
+    }
+  } @else if $media == md-plus {
+    @media only screen and (min-width: $screen-md-plus) {
+      @content;
+    }
+  } @else if $media == lg {
+    @media only screen and (min-width: $screen-lg) {
+      @content;
+    }
+  }
+}

@@ -1,0 +1,38 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-top: 16px;
+  padding-bottom: 9px;
+  & > .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .logo {
+    font-family: "filmP3";
+    font-size: 36px;
+    color: $white;
+    letter-spacing: 0.3em;
+    line-height: 1.08;
+  }
+  .header_contacts_link {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-family: "MontserratMedium";
+    font-size: 16px;
+    line-height: 1.25;
+    color: $accentedTextColor;
+    & > .icon {
+      fill: $accentedTextColor;
+    }
+  }
+  .header_contacts {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-left: auto;
+    padding-top: 3px;
+  }
+}

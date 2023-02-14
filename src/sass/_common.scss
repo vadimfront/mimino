@@ -1,0 +1,65 @@
+@import "~node_modules/modern-normalize/modern-normalize.css";
+
+body {
+  font-family: "MontserratSemiBold", sans-serif;
+  font-size: 12px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: $textColor;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  padding: 0px;
+  margin: 0px;
+
+  list-style: none;
+}
+
+button {
+  padding: 0;
+}
+
+address {
+  font-style: normal;
+}
+
+.container {
+  max-width: 414px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.btn {
+  width: 236px;
+  font-family: "MontserratBold";
+  font-size: 16px;
+  line-height: 1.25;
+  color: $accentedTextColor;
+  border: 2px solid #ffffff;
+  border-radius: 25px;
+  background-color: transparent;
+  background-image: linear-gradient(rgb(0, 0, 0, 0.4), rgb(0, 0, 0, 0.4));
+  padding: 12px 15px;
+  letter-spacing: 0.02em;
+}

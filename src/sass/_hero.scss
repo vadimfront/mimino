@@ -1,0 +1,74 @@
+.hero {
+  background-image: linear-gradient(rgb(0, 0, 0, 0.65), rgb(0, 0, 0, 0.65)),
+    url("../images/hero_mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  padding-top: 62px;
+  padding-bottom: 20px;
+  .hero_address {
+    position: relative;
+    width: 210px;
+    padding: 8px 3px 8px 34px;
+    border: 1px solid rgba(243, 198, 83, 0.7);
+    border-radius: 2px;
+    font-family: "MontserratRegular";
+    line-height: 1.25;
+    letter-spacing: 0.01em;
+    margin-left: auto;
+    margin-bottom: 70px;
+    color: $address_color;
+    & > .location_icon {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 5px;
+      margin: auto 0;
+      height: 20px;
+      width: 20px;
+      fill: $accentedTextColor;
+    }
+  }
+  .hero_content {
+    text-align: center;
+    & > .hero_title {
+      width: 303px;
+      margin: 0 auto;
+      font-family: "filmP3";
+      font-size: 96px;
+      line-height: 1.07;
+      letter-spacing: 0.3em;
+      color: $white;
+      margin-bottom: 24px;
+    }
+    & > .hero_sub_title {
+      font-family: "MontserratSemiBold";
+      font-size: 16px;
+      line-height: 1.25;
+      color: $white;
+      margin-bottom: 40px;
+    }
+    & > .hero_big_text {
+      font-family: "Times New Roman";
+      font-size: 32px;
+      line-height: 1.15;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      color: $white;
+      margin-bottom: 113px;
+    }
+    .btn:last-child {
+      margin-top: 24px;
+    }
+  }
+  .hero_social {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 23px;
+    margin-top: 58px;
+    .icon {
+      height: 24px;
+      width: 24px;
+      fill: $accentedTextColor;
+    }
+  }
+}

@@ -1,0 +1,36 @@
+.entry {
+  padding-top: 16px;
+  background-color: $entry_color;
+  .entry_headline {
+    font-family: "Times New Roman";
+    font-size: 20px;
+    line-height: 1.15;
+    color: $entry_title_color;
+    font-weight: 400;
+    margin-bottom: 12px;
+  }
+  .entry_logo {
+    font-family: "filmP3";
+    font-size: 40px;
+    color: $white;
+    letter-spacing: 0.3em;
+    line-height: 1.07;
+    color: $entry_logo_color;
+    margin-bottom: 12px;
+  }
+  .entry_text {
+    width: 258px;
+  }
+  .entry_content {
+    & > .entry_item {
+      margin-bottom: 32px;
+      & > .entry_text {
+        margin-bottom: 28px;
+      }
+      &.right > .entry_img {
+        margin-left: auto;
+        box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+      }
+    }
+  }
+}

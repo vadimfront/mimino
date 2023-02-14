@@ -1,0 +1,54 @@
+.carousel_wrapper {
+  width: 328px;
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+
+.carousel {
+  padding-bottom: 20px;
+}
+
+.carousel_wrapper.right {
+  margin-left: auto;
+}
+
+.carousel_wrapper.left {
+  margin-right: auto;
+}
+
+.slick-track {
+  display: flex;
+  gap: 25px;
+}
+
+.slick-list {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.slick-slide {
+  width: 245px;
+}
+
+.paginator_right {
+  display: flex;
+  padding-right: 27.59;
+  & > .carousel_arrow {
+    display: flex;
+    gap: 34px;
+    margin-left: auto;
+  }
+}
+
+.paginator_left {
+  display: flex;
+  padding-left: 27.59;
+  & > .carousel_arrow {
+    display: flex;
+    gap: 34px;
+    margin-right: auto;
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "homepage": "http://vadimfront.github.io/mimino",
+  "name": "template-builder",
+  "version": "1.0.0",
+  "description": "builder",
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel src/*.html",
+    "build": "parcel build src/*.html --public-url /mimino/"
+  },
+  "keywords": [],
+  "author": "vadim",
+  "license": "ISC",
+  "dependencies": {
+    "modern-normalize": "^1.1.0",
+    "parcel": "latest",
+    "posthtml-shorten": "^1.0.0",
+    "swiper": "^9.0.5"
+  },
+  "devDependencies": {
+    "@parcel/transformer-posthtml": "^2.8.3",
+    "@parcel/transformer-sass": "^2.6.0",
+    "gh-pages": "^5.0.0",
+    "jquery": "^3.6.3",
+    "parcel-bundler": "^1.12.5",
+    "parcel-reporter-clean-dist": "^1.0.4",
+    "posthtml-img-autosize": "^0.1.6",
+    "posthtml-include": "^1.7.4",
+    "posthtml-modules": "^0.9.0"
+  },
+  "browserslist": "> 0.5%, last 2 versions, not dead"
+}
