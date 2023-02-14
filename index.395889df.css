@@ -376,21 +376,22 @@ address {
 }
 
 .carousel_wrapper {
-  width: 328px;
   margin-bottom: 40px;
   overflow: hidden;
 }
 
 .carousel {
+  max-width: 542px;
   padding-bottom: 20px;
 }
 
-.carousel_wrapper.right {
+.carousel_wrapper.right .carousel {
   margin-left: auto;
+  margin-right: -188px;
 }
 
-.carousel_wrapper.left {
-  margin-right: auto;
+.carousel_wrapper.left .carousel {
+  margin-left: -188px;
 }
 
 .slick-track {
@@ -406,7 +407,7 @@ address {
 }
 
 .slick-slide {
-  width: 245px;
+  min-width: 245px;
   padding: 25px 12.5px;
 }
 
@@ -437,4 +438,4 @@ address {
   display: flex;
 }
 
-/*# sourceMappingURL=index.282e77cf.css.map */
+/*# sourceMappingURL=index.395889df.css.map */
