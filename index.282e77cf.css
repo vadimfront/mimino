@@ -369,6 +369,9 @@ address {
 
 .entry .entry_content > .entry_item.right > .entry_img {
   margin-left: auto;
+}
+
+.entry .entry_content .entry_img {
   box-shadow: 2px 2px 60px 2px #00000040;
 }
 
@@ -391,7 +394,6 @@ address {
 }
 
 .slick-track {
-  gap: 25px;
   display: flex;
 }
 
@@ -405,6 +407,12 @@ address {
 
 .slick-slide {
   width: 245px;
+  padding: 25px 12.5px;
+}
+
+.slick-slide > img {
+  border-radius: 2px;
+  box-shadow: 2px 2px 12.5px 2px #00000040;
 }
 
 .paginator_right {
@@ -429,4 +437,4 @@ address {
   display: flex;
 }
 
-/*# sourceMappingURL=index.a1f17597.css.map */
+/*# sourceMappingURL=index.282e77cf.css.map */
