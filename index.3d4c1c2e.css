@@ -205,6 +205,15 @@ address {
   line-height: 1.25;
 }
 
+.section_logo {
+  color: #fff;
+  letter-spacing: .3em;
+  margin-bottom: 12px;
+  font-family: filmP3;
+  font-size: 40px;
+  line-height: 1.07;
+}
+
 .header {
   padding-top: 16px;
   padding-bottom: 9px;
@@ -334,10 +343,11 @@ address {
 .entry {
   background-color: #fffdee;
   padding-top: 16px;
+  padding-bottom: 27.59px;
 }
 
 .entry .entry_headline {
-  color: #b4b4b4;
+  color: #c79002;
   margin-bottom: 12px;
   font-family: Times New Roman;
   font-size: 20px;
@@ -346,13 +356,7 @@ address {
 }
 
 .entry .entry_logo {
-  color: #fff;
-  letter-spacing: .3em;
   color: #494848;
-  margin-bottom: 12px;
-  font-family: filmP3;
-  font-size: 40px;
-  line-height: 1.07;
 }
 
 .entry .entry_text {
@@ -371,18 +375,32 @@ address {
   margin-left: auto;
 }
 
+.entry .entry_content > .entry_item:last-child {
+  margin-bottom: 0;
+}
+
 .entry .entry_content .entry_img {
   box-shadow: 2px 2px 60px 2px #00000040;
 }
 
+.entry .entry_content .entry_item.left {
+  color: #c79002;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 20px;
+  display: flex;
+}
+
+.entry .carousel_wrapper {
+  margin-top: 5px;
+}
+
 .carousel_wrapper {
-  margin-bottom: 40px;
   overflow: hidden;
 }
 
 .carousel {
   max-width: 542px;
-  padding-bottom: 20px;
 }
 
 .carousel_wrapper.right .carousel {
@@ -407,7 +425,7 @@ address {
 }
 
 .slick-slide {
-  padding: 25px 12.5px;
+  padding: 25px 12px;
 }
 
 .slick-slide > img {
@@ -416,6 +434,7 @@ address {
 }
 
 .paginator_right {
+  margin-top: 2.59px;
   padding-right: 27.59px;
   display: flex;
 }
@@ -437,4 +456,249 @@ address {
   display: flex;
 }
 
-/*# sourceMappingURL=index.e2964451.css.map */
+.details_restaurant {
+  background-image: linear-gradient(#000000a6, #000000a6), url("details_restaurant_bg.998db739.jpg");
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.details_restaurant .container {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.details_restaurant .details_restaurant_title {
+  color: #fff;
+  margin-bottom: 20px;
+  font-family: MontserratBold;
+  font-size: 20px;
+}
+
+.details_restaurant .details_restaurant_text {
+  font-family: MontserratSemiBold;
+}
+
+.details_restaurant .carousel_arrow .icon {
+  fill: #fff;
+}
+
+.details_restaurant .carousel_wrapper.right .carousel {
+  margin-right: -159px;
+}
+
+.details_restaurant .paginator_right {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.details_restaurant .paginator_right > .carousel_arrow {
+  width: 371px;
+}
+
+.details_restaurant .button_wrapper {
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  margin-top: 32px;
+  display: flex;
+}
+
+.modal {
+  z-index: -1;
+  opacity: 0;
+  background-color: #0000008a;
+  justify-content: center;
+  align-items: center;
+  transition-property: opacity;
+  transition-duration: .25s;
+  transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+  display: flex;
+  position: fixed;
+  inset: 0;
+}
+
+.modal .modal_container {
+  width: 100%;
+  max-width: 414px;
+  opacity: 0;
+  background-color: #fffdee;
+  padding: 60px 15px;
+  position: relative;
+}
+
+.modal .modal_container > .modal_close {
+  cursor: pointer;
+  z-index: 2;
+  background-color: #0000;
+  border: none;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+
+.modal .modal_container > .modal_close > svg {
+  pointer-events: none;
+}
+
+.active_modal {
+  opacity: 1;
+  z-index: 99;
+}
+
+.active_modal > .modal_container {
+  opacity: 1;
+}
+
+.modal_title {
+  letter-spacing: .05em;
+  text-align: center;
+  color: #000;
+  margin-bottom: 40px;
+  font-family: Times New Roman;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.modal_input {
+  width: 100%;
+  letter-spacing: .05em;
+  border: 1px solid #c79002;
+  padding: 14.5px 12px;
+  font-family: Times New Roman;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+.modal_input::placeholder {
+  color: gray;
+}
+
+.form_group {
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.select_wrapper {
+  position: relative;
+}
+
+.select_wrapper > .icon {
+  pointer-events: none;
+  fill: #c79002;
+  position: absolute;
+  top: calc(50% - 14px);
+  right: 20px;
+}
+
+.modal_label {
+  letter-spacing: .02em;
+  color: #c79002;
+  order: 1;
+  margin-top: 8px;
+  padding-left: 12px;
+  font-family: MontserratMedium;
+  font-size: 14px;
+  line-height: 17px;
+  display: flex;
+}
+
+.modal_select {
+  width: 100%;
+  letter-spacing: .05em;
+  -webkit-appearance: none;
+  appearance: none;
+  color: gray;
+  border: 1px solid #c79002;
+  padding: 14.5px 12px;
+  font-family: Times New Roman;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.15;
+  position: relative;
+}
+
+.modal_select > option[value=""][disabled] {
+  display: none;
+}
+
+.modal_btn {
+  width: 100%;
+  color: #fff;
+  letter-spacing: normal;
+  cursor: pointer;
+  background-color: #000;
+  border: none;
+  margin-top: 20px;
+  padding: 20px 43px;
+  font-family: MontserratMedium;
+  font-size: 20px;
+  line-height: 1.15;
+}
+
+.modal_room_types {
+  letter-spacing: .05em;
+  color: gray;
+  margin-bottom: 28px;
+  font-family: Times New Roman;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.modal_room_categoty {
+  letter-spacing: .02em;
+  color: #c79002;
+  margin-bottom: 20px;
+  font-family: MontserratMedium;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+@media screen and (min-width: 1024px) {
+  .modal .modal_container {
+    max-width: 712px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .modal_form {
+    flex-wrap: wrap;
+    column-gap: 15px;
+    display: flex;
+  }
+
+  .form_group {
+    flex-basis: calc(50% - 8px);
+  }
+
+  .modal_btn {
+    width: 100%;
+  }
+
+  .book_room_modal > .form_group:nth-child(3) {
+    flex-basis: 100%;
+  }
+
+  .book_room_modal > .form_group:nth-child(3) > .form_group_right {
+    width: calc(50% - 7.5px);
+    margin-left: auto;
+  }
+
+  .modal_title {
+    font-size: 40px;
+  }
+
+  .modal_btn {
+    font-size: 24px;
+  }
+
+  .room_price_modal {
+    flex-wrap: wrap;
+    column-gap: 16px;
+    display: flex;
+  }
+}
+
+/*# sourceMappingURL=index.3d4c1c2e.css.map */
