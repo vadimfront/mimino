@@ -643,14 +643,22 @@ address {
   width: 375px;
 }
 
+.carousel_big .swiper-wrapper {
+  gap: 20px;
+}
+
 .carousel_big .swiper-slide {
   width: 274px;
-  margin-right: 19px;
-  padding-left: 0;
 }
 
 .carousel_big .swiper-pagination .icon {
   fill: #fff;
+}
+
+.carousel_big.left_side .swiper-pagination {
+  flex-direction: row;
+  padding-left: 0;
+  padding-right: 15.5px;
 }
 
 .swiper {
@@ -665,16 +673,9 @@ address {
 }
 
 .left_side .swiper-pagination {
-  flex-direction: row-reverse;
   gap: 30px;
   margin-top: 20px;
-  padding-left: 12.5px;
   display: flex;
-}
-
-.left_side .swiper-slide {
-  padding-left: 12.5px;
-  padding-right: 0;
 }
 
 .right_side .swiper {
@@ -690,7 +691,12 @@ address {
   display: flex;
 }
 
-.swiper-slide {
+.carousel_small .swiper-slide > img {
+  border-radius: 2px;
+  box-shadow: 2px 2px 12.5px 2px #00000040;
+}
+
+.carousel_small .swiper-slide {
   width: 245px;
   box-sizing: content-box;
   margin-right: 12.5px;
@@ -698,9 +704,14 @@ address {
   display: flex;
 }
 
-.swiper-slide > img {
-  border-radius: 2px;
-  box-shadow: 2px 2px 12.5px 2px #00000040;
+.carousel_small .left_side .swiper-pagination {
+  flex-direction: row-reverse;
+  padding-left: 12.5px;
+}
+
+.carousel_small .left_side .swiper-slide {
+  padding-left: 12.5px;
+  padding-right: 0;
 }
 
 .swiper-slide-active {
@@ -766,6 +777,52 @@ address {
 .details_restaurant .carousel_big .container {
   padding-left: 0;
   padding-right: 0;
+}
+
+.details_hotel {
+  background-image: linear-gradient(#000000b3, #000000b3), url("details_hotel_bg.eb113ca2.jpg");
+  background-position: center;
+  background-size: cover;
+  padding-top: 24px;
+  padding-bottom: 40px;
+}
+
+.details_hotel .details_hotel_content {
+  width: 243px;
+  flex-direction: column;
+  display: flex;
+}
+
+.details_hotel .details_hotel_content > .details_hotel_logo, .details_hotel .details_hotel_content > .details_hotel_title {
+  margin-left: auto;
+}
+
+.details_hotel .carousel_big > .container {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.details_hotel .details_hotel_title {
+  color: #fff;
+  margin-bottom: 20px;
+  font-family: MontserratBold;
+  font-size: 20px;
+}
+
+.details_hotel .details_hotel_text {
+  color: #bababa;
+  font-family: MontserratSemiBold;
+}
+
+.details_hotel .carousel_big {
+  margin-bottom: 32px;
+}
+
+.details_hotel > .button_wrapper {
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  display: flex;
 }
 
 .modal {
@@ -967,4 +1024,4 @@ address {
   }
 }
 
-/*# sourceMappingURL=index.0363d975.css.map */
+/*# sourceMappingURL=index.77cb339a.css.map */
