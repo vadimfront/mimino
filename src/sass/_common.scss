@@ -48,6 +48,7 @@ address {
   max-width: 414px;
   padding-left: 15px;
   padding-right: 15px;
+  margin: 0 auto;
 }
 
 .btn {
@@ -62,4 +63,13 @@ address {
   background-image: linear-gradient(rgb(0, 0, 0, 0.4), rgb(0, 0, 0, 0.4));
   padding: 12px 15px;
   letter-spacing: 0.02em;
+}
+
+.section_logo {
+  font-family: "filmP3";
+  font-size: 40px;
+  color: $white;
+  letter-spacing: 0.3em;
+  line-height: 1.07;
+  margin-bottom: 12px;
 }

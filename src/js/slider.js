@@ -1,22 +1,28 @@
 const $ = require("jquery");
+import Swiper, { Navigation } from "swiper";
 
 $(function () {
-  $("#carousel_left").slick({
-    infinite: true,
-    slidesToShow: 2,
-    slidesToScroll: 1,
-    mobileFirst: true,
-    variableWidth: true,
-    prevArrow: $(".carousel_left_arrow .prev"),
-    nextArrow: $(".carousel_left_arrow .next"),
+  const swiperLeft = new Swiper(".left_side .swiper", {
+    // Optional parameters
+    modules: [Navigation],
+    slidesPerView: "auto",
+    slidesPerGroup: 1,
+    spaceBetween: 0,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+      enabled: true,
+    },
   });
-  $("#carousel_right").slick({
-    infinite: true,
-    slidesToShow: 2,
-    slidesToScroll: 1,
-    mobileFirst: true,
-    variableWidth: true,
-    prevArrow: $(".carousel_right_arrow > .prev"),
-    nextArrow: $(".carousel_right_arrow > .next"),
+  const swiperRight = new Swiper(".right_side .swiper", {
+    // Optional parameters
+    modules: [Navigation],
+    slidesPerView: "auto",
+    spaceBetween: 0,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+      enabled: true,
+    },
   });
 });

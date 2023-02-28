@@ -1,2 +1,3 @@
-import "./js/slick.js";
+import "./js/jquery.mask.js";
+import "./js/modal.js";
 import "./js/slider.js";

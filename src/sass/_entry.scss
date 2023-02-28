@@ -1,0 +1,53 @@
+.entry {
+  padding-top: 16px;
+  padding-bottom: 27.59px;
+  background-color: $entry_color;
+  .text_accented {
+    color: $accented_yellow;
+  }
+  .float_text {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+  .text_right {
+    text-align: right;
+  }
+  .entry_headline {
+    font-family: "Times New Roman";
+    font-size: 20px;
+    line-height: 1.15;
+    color: $accented_yellow;
+    font-weight: 400;
+    margin-bottom: 12px;
+  }
+  .entry_logo {
+    color: $entry_logo_color;
+  }
+  .entry_text {
+    width: 258px;
+  }
+  .entry_content {
+    & > .entry_item {
+      margin-bottom: 32px;
+      & > .entry_text {
+        margin-bottom: 28px;
+      }
+      &.right > .entry_img {
+        margin-left: auto;
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    .entry_img {
+      box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+    }
+    .entry_item.left {
+      flex-direction: row-reverse;
+    }
+  }
+  .about_restaurant_slider {
+    max-width: 500px;
+  }
+}

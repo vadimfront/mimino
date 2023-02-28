@@ -71,4 +71,9 @@
       fill: $accentedTextColor;
     }
   }
+  @media screen and (min-width: 415px) {
+    .hero {
+      background-image: url("../images/hero_tablet.jpg");
+    }
+  }
 }

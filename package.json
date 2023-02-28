@@ -17,6 +17,7 @@
     "modern-normalize": "^1.1.0",
     "parcel": "latest",
     "posthtml-shorten": "^1.0.0",
+    "slick-slider": "^1.8.2",
     "swiper": "^9.0.5"
   },
   "devDependencies": {
