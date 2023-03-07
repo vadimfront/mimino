@@ -845,7 +845,9 @@ address {
 }
 
 .contacts .contact {
+  width: 102px;
   color: #c79002;
+  font-family: MontserratMedium;
   font-size: 20px;
 }
 
@@ -856,17 +858,13 @@ address {
 .contacts .contacts_list > li {
   flex-wrap: wrap;
   align-items: center;
-  gap: 15px;
+  gap: 22px;
   margin-top: 16px;
   display: flex;
 }
 
-.contacts .contacts_list > li:nth-child(2) {
-  gap: 48px;
-}
-
 .contacts .contacts_list .dedicated_block {
-  width: 266px;
+  width: 260px;
   color: #494848;
   letter-spacing: .02em;
   background-color: #fff;
@@ -874,7 +872,6 @@ address {
   border-radius: 2px;
   flex-wrap: wrap;
   align-items: center;
-  gap: 8px;
   padding: 9px 8px 7px;
   font-family: MontserratRegular;
   font-size: 14px;
@@ -894,8 +891,12 @@ address {
   width: 183px;
 }
 
-.contacts .contacts_list .contact_hotel_phone {
+.contacts .contacts_list .contact_hotel_phones .contact_hotel_phone {
   color: #494848;
+}
+
+.contacts .contacts_list .contact_hotel_phones > .icon + .contact_hotel_phone {
+  margin-right: 8px;
 }
 
 .modal {
@@ -1097,4 +1098,4 @@ address {
   }
 }
 
-/*# sourceMappingURL=index.2a98f745.css.map */
+/*# sourceMappingURL=index.d41a95a7.css.map */
