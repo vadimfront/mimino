@@ -1,0 +1,59 @@
+.contacts {
+  padding-top: 36px;
+  padding-bottom: 32px;
+  background-color: $bg_content;
+  .section_logo {
+    color: $entry_logo_color;
+  }
+  .contacts_title {
+    font-size: 16px;
+  }
+  .contact {
+    width: 102px;
+    font-family: "MontserratMedium";
+    font-size: 20px;
+    color: $accented_yellow;
+  }
+  .contacts_list {
+    margin-bottom: 32px;
+    & > li {
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 22px;
+      margin-top: 16px;
+      display: flex;
+    }
+    .dedicated_block {
+      width: 260px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      font-family: "MontserratRegular";
+      font-size: 14px;
+      color: #494848;
+      padding: 9px 8px 7px 8px;
+      background-color: $white;
+      border: 0.5px solid #f3c653;
+      border-radius: 2px;
+      letter-spacing: 0.02em;
+    }
+    .contact_restaurant_phone {
+      width: auto;
+    }
+    address.dedicated_block {
+      padding-right: 32px;
+      margin-left: auto;
+      & > span {
+        width: 183px;
+      }
+    }
+    .contact_hotel_phones {
+      .contact_hotel_phone {
+        color: #494848;
+      }
+      & > .icon + .contact_hotel_phone {
+        margin-right: 8px;
+      }
+    }
+  }
+}

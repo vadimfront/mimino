@@ -1,99 +1,50 @@
-.carousel_small {
-  margin-top: 19.5px;
-  .container {
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
-.carousel_big {
-  margin-top: 48px;
-  .swiper {
-    width: 375px;
-  }
-  .swiper-wrapper {
-    gap: 20px;
-  }
-  .swiper-slide {
-    width: 274px;
-  }
-  .swiper-pagination {
-    .icon {
-      fill: $white;
-    }
-  }
-  &.left_side {
-    .swiper-pagination {
-      flex-direction: row;
-      padding-left: 0;
-      padding-right: 15.5px;
-    }
-  }
-}
-
 .swiper {
-  padding-top: 12.5px;
-  width: 343px;
+  width: calc(100% - 34px);
+  margin-top: 15px;
+  margin-right: 0;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 13px;
 }
 
-.left_side {
-  .swiper {
-    margin-left: 0;
-    margin-right: auto;
-    direction: rtl;
-  }
-  .swiper-pagination {
-    display: flex;
-    gap: 30px;
-    margin-top: 20px;
-  }
+.swiper-slide {
+  width: 250px;
+  height: 250px;
+  margin-right: 25px;
+  box-shadow: 2px 2px 12.5px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
 }
 
-.right_side {
-  .swiper {
-    margin-left: auto;
-    margin-right: 0;
-  }
-  .swiper-pagination {
-    display: flex;
-    gap: 30px;
-    margin-top: 20px;
-    padding-right: 12.5px;
-    justify-content: flex-end;
-  }
+.swiper-slide:last-child {
+  margin-right: 0;
 }
 
-.carousel_small {
-  .swiper-slide > img {
-    border-radius: 2px;
-    box-shadow: 2px 2px 12.5px 2px rgba(0, 0, 0, 0.25);
-  }
-  .swiper-slide {
-    display: flex;
-    width: 245px;
-    padding-left: 12.5px;
-    margin-right: 12.5px;
-    box-sizing: content-box;
-  }
-  .left_side {
-    .swiper-pagination {
-      padding-left: 12.5px;
-      flex-direction: row-reverse;
-    }
-    .swiper-slide {
-      padding-left: 12.5px;
-      padding-right: 0;
-    }
-  }
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.swiper-slide-active {
+.swiper-pagination {
+  width: 100%;
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.swiper-pagination-right {
+  justify-content: flex-end;
+}
+
+.swiper_side .swiper {
+  display: flex;
+  flex-wrap: wrap;
   margin-left: 0;
+  padding-right: 13px;
+  padding-left: 0;
 }
 
-.direction_right .swiper-wrapper {
-  transition: transform;
-  animation-duration: 500ms;
-  animation-timing-function: ease-in;
-  gap: 25px;
+.swiper_side .swiper-slide:first-child {
+  width: 60px;
 }
