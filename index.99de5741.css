@@ -1027,6 +1027,7 @@ address {
 }
 
 .footer > .container {
+  padding: 0 30px;
   display: flex;
 }
 
@@ -1074,4 +1075,4 @@ address {
   margin-right: 0;
 }
 
-/*# sourceMappingURL=index.887ff2a4.css.map */
+/*# sourceMappingURL=index.99de5741.css.map */
