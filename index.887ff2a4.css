@@ -1020,4 +1020,58 @@ address {
   }
 }
 
-/*# sourceMappingURL=index.a6199d61.css.map */
+.footer {
+  background-color: #0e0c07;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.footer > .container {
+  display: flex;
+}
+
+.footer .logo {
+  color: #f3c653;
+  letter-spacing: .3em;
+  flex-grow: 1;
+  flex-basis: 200px;
+  justify-content: center;
+  align-items: center;
+  font-family: filmP3;
+  font-size: 40px;
+  line-height: 1;
+  display: flex;
+}
+
+.footer .footer_nav .footer_nav_item {
+  margin-bottom: 15px;
+}
+
+.footer .footer_nav .footer_nav_item:last-child {
+  margin-bottom: 0;
+}
+
+.footer .footer_nav .footer_nav_item > a {
+  color: #f3c653;
+  font-family: MontserratMedium;
+  font-size: 20px;
+}
+
+.footer .footer_social .icon {
+  fill: #f3c653;
+}
+
+.footer .footer_social {
+  margin-top: 32px;
+}
+
+.footer .footer_social .footer_social_item {
+  margin-right: 20px;
+  display: inline-block;
+}
+
+.footer .footer_social .footer_social_item:last-child {
+  margin-right: 0;
+}
+
+/*# sourceMappingURL=index.887ff2a4.css.map */
