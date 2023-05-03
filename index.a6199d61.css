@@ -657,7 +657,8 @@ address {
 
 .swiper-pagination {
   width: 100%;
-  gap: 15px;
+  cursor: pointer;
+  gap: 30px;
   margin-top: 20px;
   display: flex;
 }
@@ -676,6 +677,11 @@ address {
 
 .swiper-slide:first-child, .swiper-slide:last-child {
   width: 60px;
+}
+
+.big-carousel .swiper-slide {
+  width: 274px;
+  height: 274px;
 }
 
 .details_restaurant {
@@ -704,6 +710,13 @@ address {
 
 .details_restaurant .swiper-pagination .icon {
   fill: #fff;
+}
+
+.details_restaurant .button_wrapper {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  display: flex;
 }
 
 .details_hotel {
@@ -740,10 +753,21 @@ address {
   fill: #fff;
 }
 
+.details_hotel .button_wrapper {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  display: flex;
+}
+
 .contacts {
   background-color: #fffdee;
   padding-top: 36px;
   padding-bottom: 32px;
+}
+
+.contacts .contact {
+  width: 100px;
 }
 
 .contacts .section_logo {
@@ -755,7 +779,6 @@ address {
 }
 
 .contacts .contact {
-  width: 102px;
   color: #c79002;
   font-family: MontserratMedium;
   font-size: 20px;
@@ -774,13 +797,11 @@ address {
 }
 
 .contacts .contacts_list .dedicated_block {
-  width: 260px;
   color: #494848;
   letter-spacing: .02em;
   background-color: #fff;
   border: .5px solid #f3c653;
   border-radius: 2px;
-  flex-wrap: wrap;
   align-items: center;
   padding: 9px 8px 7px;
   font-family: MontserratRegular;
@@ -788,17 +809,8 @@ address {
   display: flex;
 }
 
-.contacts .contacts_list .contact_restaurant_phone {
-  width: auto;
-}
-
-.contacts .contacts_list address.dedicated_block {
-  margin-left: auto;
-  padding-right: 32px;
-}
-
-.contacts .contacts_list address.dedicated_block > span {
-  width: 183px;
+.contacts .contacts_list .contact_address {
+  padding-left: 122px;
 }
 
 .contacts .contacts_list .contact_hotel_phones .contact_hotel_phone {
@@ -1008,4 +1020,4 @@ address {
   }
 }
 
-/*# sourceMappingURL=index.db3620e4.css.map */
+/*# sourceMappingURL=index.a6199d61.css.map */
