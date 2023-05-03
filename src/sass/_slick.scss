@@ -29,8 +29,9 @@
 .swiper-pagination {
   width: 100%;
   display: flex;
-  gap: 15px;
+  gap: 30px;
   margin-top: 20px;
+  cursor: pointer;
 }
 
 .swiper-pagination-right {
@@ -48,4 +49,11 @@
 .swiper-slide:first-child,
 .swiper-slide:last-child {
   width: 60px;
+}
+
+.big-carousel {
+  .swiper-slide {
+    width: 274px;
+    height: 274px;
+  }
 }

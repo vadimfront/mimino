@@ -1,0 +1,48 @@
+.footer {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: $footer_bg;
+  & > .container {
+    display: flex;
+  }
+  .logo {
+    display: flex;
+    flex-basis: 200px;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    color: $accentedTextColor;
+    letter-spacing: 0.3em;
+    font-family: filmP3;
+    font-size: 40px;
+    line-height: 1;
+  }
+  .footer_nav {
+    .footer_nav_item {
+      margin-bottom: 15px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      & > a {
+        font-family: "MontserratMedium";
+        font-size: 20px;
+        color: $accentedTextColor;
+      }
+    }
+  }
+  .footer_social {
+    .icon {
+      fill: $accentedTextColor;
+    }
+  }
+  .footer_social {
+    margin-top: 32px;
+    .footer_social_item {
+      display: inline-block;
+      margin-right: 20px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}

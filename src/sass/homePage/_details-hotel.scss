@@ -29,4 +29,10 @@
       fill: #fff;
     }
   }
+  .button_wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    display: flex;
+  }
 }

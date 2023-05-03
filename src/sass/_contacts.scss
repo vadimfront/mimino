@@ -2,6 +2,9 @@
   padding-top: 36px;
   padding-bottom: 32px;
   background-color: $bg_content;
+  .contact {
+    width: 100px;
+  }
   .section_logo {
     color: $entry_logo_color;
   }
@@ -9,7 +12,6 @@
     font-size: 16px;
   }
   .contact {
-    width: 102px;
     font-family: "MontserratMedium";
     font-size: 20px;
     color: $accented_yellow;
@@ -24,9 +26,7 @@
       display: flex;
     }
     .dedicated_block {
-      width: 260px;
       display: flex;
-      flex-wrap: wrap;
       align-items: center;
       font-family: "MontserratRegular";
       font-size: 14px;
@@ -37,15 +37,8 @@
       border-radius: 2px;
       letter-spacing: 0.02em;
     }
-    .contact_restaurant_phone {
-      width: auto;
-    }
-    address.dedicated_block {
-      padding-right: 32px;
-      margin-left: auto;
-      & > span {
-        width: 183px;
-      }
+    .contact_address {
+      padding-left: 122px;
     }
     .contact_hotel_phones {
       .contact_hotel_phone {
