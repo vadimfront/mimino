@@ -4,6 +4,7 @@
   background-color: $footer_bg;
   & > .container {
     display: flex;
+    padding: 0 30px;
   }
   .logo {
     display: flex;
