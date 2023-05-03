@@ -627,107 +627,55 @@ address {
   max-width: 500px;
 }
 
-.carousel_small {
-  margin-top: 19.5px;
-}
-
-.carousel_small .container {
-  padding-left: 0;
-  padding-right: 0;
-}
-
-.carousel_big {
-  margin-top: 48px;
-}
-
-.carousel_big .swiper {
-  width: 375px;
-}
-
-.carousel_big .swiper-wrapper {
-  gap: 20px;
-}
-
-.carousel_big .swiper-slide {
-  width: 274px;
-}
-
-.carousel_big .swiper-pagination {
-  cursor: pointer;
-}
-
-.carousel_big .swiper-pagination .icon {
-  fill: #fff;
-}
-
-.carousel_big.left_side .swiper-pagination {
-  flex-direction: row;
-  padding-left: 0;
-  padding-right: 15.5px;
-}
-
 .swiper {
-  width: 343px;
-  padding-top: 12.5px;
-}
-
-.left_side .swiper {
-  direction: rtl;
-  margin-left: 0;
-  margin-right: auto;
-}
-
-.left_side .swiper-pagination {
-  gap: 30px;
-  margin-top: 20px;
-  display: flex;
-}
-
-.right_side .swiper {
-  margin-left: auto;
+  width: calc(100% - 34px);
+  margin-top: 15px;
   margin-right: 0;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 13px;
 }
 
-.right_side .swiper-pagination {
-  justify-content: flex-end;
-  gap: 30px;
-  margin-top: 20px;
-  padding-right: 12.5px;
-  display: flex;
-}
-
-.carousel_small .swiper-slide > img {
+.swiper-slide {
+  width: 250px;
+  height: 250px;
   border-radius: 2px;
+  margin-right: 25px;
   box-shadow: 2px 2px 12.5px 2px #00000040;
 }
 
-.carousel_small .swiper-slide {
-  width: 245px;
-  box-sizing: content-box;
-  margin-right: 12.5px;
-  padding-left: 12.5px;
+.swiper-slide:last-child {
+  margin-right: 0;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.swiper-pagination {
+  width: 100%;
+  gap: 15px;
+  margin-top: 20px;
   display: flex;
 }
 
-.carousel_small .left_side .swiper-pagination {
-  flex-direction: row-reverse;
-  padding-left: 12.5px;
+.swiper-pagination-right {
+  justify-content: flex-end;
 }
 
-.carousel_small .left_side .swiper-slide {
-  padding-left: 12.5px;
-  padding-right: 0;
-}
-
-.swiper-slide-active {
+.swiper_side .swiper {
+  flex-wrap: wrap;
   margin-left: 0;
+  padding-left: 0;
+  padding-right: 13px;
+  display: flex;
 }
 
-.direction_right .swiper-wrapper {
-  gap: 25px;
-  transition: transform;
-  animation-duration: .5s;
-  animation-timing-function: ease-in;
+.swiper-slide:first-child, .swiper-slide:last-child {
+  width: 60px;
 }
 
 .details_restaurant {
@@ -754,34 +702,8 @@ address {
   font-family: MontserratSemiBold;
 }
 
-.details_restaurant .carousel_arrow .icon {
+.details_restaurant .swiper-pagination .icon {
   fill: #fff;
-}
-
-.details_restaurant .carousel_wrapper.right .carousel {
-  margin-right: -159px;
-}
-
-.details_restaurant .paginator_right {
-  padding-left: 0;
-  padding-right: 0;
-}
-
-.details_restaurant .paginator_right > .carousel_arrow {
-  width: 371px;
-}
-
-.details_restaurant .button_wrapper {
-  flex-direction: column;
-  align-items: center;
-  gap: 16px;
-  margin-top: 32px;
-  display: flex;
-}
-
-.details_restaurant .carousel_big .container {
-  padding-left: 0;
-  padding-right: 0;
 }
 
 .details_hotel {
@@ -802,11 +724,6 @@ address {
   margin-left: auto;
 }
 
-.details_hotel .carousel_big > .container {
-  padding-left: 0;
-  padding-right: 0;
-}
-
 .details_hotel .details_hotel_title {
   color: #fff;
   margin-bottom: 20px;
@@ -819,15 +736,8 @@ address {
   font-family: MontserratSemiBold;
 }
 
-.details_hotel .carousel_big {
-  margin-bottom: 32px;
-}
-
-.details_hotel > .button_wrapper {
-  flex-direction: column;
-  align-items: center;
-  gap: 16px;
-  display: flex;
+.details_hotel .swiper-pagination .icon {
+  fill: #fff;
 }
 
 .contacts {
@@ -1098,4 +1008,4 @@ address {
   }
 }
 
-/*# sourceMappingURL=index.d41a95a7.css.map */
+/*# sourceMappingURL=index.db3620e4.css.map */
