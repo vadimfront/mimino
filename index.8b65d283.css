@@ -675,10 +675,6 @@ address {
   display: flex;
 }
 
-.swiper-slide:first-child, .swiper-slide:last-child {
-  width: 60px;
-}
-
 .big-carousel .swiper-slide {
   width: 274px;
   height: 274px;
@@ -862,6 +858,9 @@ address {
 .active_modal {
   opacity: 1;
   z-index: 99;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 
 .active_modal > .modal_container {
@@ -1075,4 +1074,4 @@ address {
   margin-right: 0;
 }
 
-/*# sourceMappingURL=index.99de5741.css.map */
+/*# sourceMappingURL=index.8b65d283.css.map */
