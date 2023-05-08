@@ -19,7 +19,7 @@
     line-height: 1;
   }
   .footer_nav {
-    .footer_nav_item {
+    .footer_nav__item {
       margin-bottom: 15px;
       &:last-child {
         margin-bottom: 0;
@@ -28,22 +28,27 @@
         font-family: "MontserratMedium";
         font-size: 20px;
         color: $accentedTextColor;
+        transition-property: color;
+        transition-duration: 0.25s;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover,
+        &:focus {
+          color: $accented_yellow;
+        }
       }
     }
   }
   .footer_social {
-    .icon {
-      fill: $accentedTextColor;
-    }
-  }
-  .footer_social {
     margin-top: 32px;
-    .footer_social_item {
+    .footer_social__item {
       display: inline-block;
       margin-right: 20px;
       &:last-child {
         margin-right: 0;
       }
+    }
+    .icon {
+      fill: $accentedTextColor;
     }
   }
 }

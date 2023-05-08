@@ -15,8 +15,12 @@
     color: $white;
     letter-spacing: 0.3em;
     line-height: 1.08;
+    @include respond(md) {
+      font-size: 40px;
+    }
   }
-  .header_contacts_link {
+
+  .header_list__link {
     display: flex;
     align-items: center;
     gap: 6px;
@@ -24,11 +28,46 @@
     font-size: 16px;
     line-height: 1.25;
     color: $accentedTextColor;
-    & > .icon {
-      fill: $accentedTextColor;
+    transition-property: color;
+    transition-duration: 0.25s;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      color: $accented_yellow;
     }
   }
-  .header_contacts {
+  .header_list__contact {
+    @include respond(md) {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      padding: 12px 6px;
+      width: 144px;
+      height: 40px;
+      border: 1px solid rgba(243, 198, 83, 0.7);
+    }
+    border-radius: 2px;
+    .header_list__phone {
+      display: none;
+      @include respond(md) {
+        display: block;
+        font-size: 14px;
+        color: $white;
+        font-family: "MontserratRegular";
+      }
+    }
+    & > .icon {
+      transition-property: fill;
+      transition-duration: 0.25s;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      fill: $accentedTextColor;
+      &:hover,
+      &:focus {
+        fill: $accented_yellow;
+      }
+    }
+  }
+  .header_list {
     display: flex;
     gap: 20px;
     align-items: center;

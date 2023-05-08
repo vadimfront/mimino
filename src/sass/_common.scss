@@ -49,6 +49,9 @@ address {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+  @include respond(md) {
+    max-width: 1024px;
+  }
 }
 
 .btn {
@@ -63,7 +66,18 @@ address {
   background-image: linear-gradient(rgb(0, 0, 0, 0.4), rgb(0, 0, 0, 0.4));
   padding: 12px 15px;
   letter-spacing: 0.02em;
+  transition-property: border-color, background-color, color;
+  transition-duration: 0.25s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
+  &:hover,
+  &:focus {
+    border-color: $accentedTextColor;
+    background-color: $white;
+    background-image: none;
+    color: $accentedTextColor;
+    outline: none;
+  }
 }
 
 .section_logo {

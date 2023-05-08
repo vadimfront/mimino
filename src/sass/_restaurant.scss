@@ -1,0 +1,102 @@
+.restaurant {
+  padding-top: 16px;
+  padding-bottom: 27.59px;
+  background-color: $entry_color;
+  .text_accented {
+    color: $accented_yellow;
+  }
+  .restaurant_float_text {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+  .restaurant_text_right {
+    text-align: right;
+  }
+  .restaurant_headline {
+    font-family: "Times New Roman";
+    font-size: 20px;
+    line-height: 1.15;
+    color: $entry_title_color;
+    font-weight: 400;
+    margin-bottom: 12px;
+    @include respond(md) {
+      font-size: 32px;
+    }
+  }
+  .restaurant_logo {
+    letter-spacing: 0.3em;
+    margin-bottom: 12px;
+    font-family: filmP3;
+    font-size: 40px;
+    line-height: 1.07;
+    color: $entry_logo_color;
+    @include respond(md) {
+      font-size: 64px;
+    }
+  }
+  .restaurant_text {
+    @include respond(md) {
+      font-size: 16px;
+    }
+  }
+  .restaurant_content {
+    & > .restaurant_item {
+      margin-bottom: 32px;
+      & > .restaurant_item__content {
+        width: 258px;
+        @include respond(md) {
+          width: 526px;
+        }
+        margin-bottom: 28px;
+        @include respond(md) {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          margin-bottom: 0;
+        }
+      }
+      & > .restaurant_text {
+        margin-bottom: 28px;
+        max-width: 312px;
+      }
+      &.right {
+        @include respond(md) {
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          gap: 20px;
+        }
+        & > .restaurant_picture {
+          @include respond(md) {
+            margin-top: -48px;
+            padding-right: 50px;
+          }
+        }
+        .restaurant_img {
+          margin-left: auto;
+        }
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    .restaurant_img {
+      box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+      min-width: 200px;
+    }
+    .restaurant_item.left {
+      display: flex;
+      justify-content: flex-end;
+      flex-direction: row-reverse;
+      gap: 20px;
+      align-items: center;
+      @include respond(md) {
+        margin-top: -48px;
+      }
+    }
+  }
+  .about_restaurant_slider {
+    max-width: 500px;
+  }
+}

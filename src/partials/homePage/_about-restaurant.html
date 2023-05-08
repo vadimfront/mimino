@@ -1,49 +1,78 @@
-<section class="about_restaurant entry">
+<section class="about_restaurant restaurant">
   <div class="container">
-    <h6 class="entry_headline">Amet minim mollit non</h6>
-    <p class="entry_logo section_logo">MIMIHO</p>
-    <div class="entry_content">
-      <div class="entry_item right">
-        <p class="entry_text">
-          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-          sint. Velit officia consequat duis enim velit mollit. Exercitation
-          veniam consequat sunt nostrud amet.
-        </p>
-        <img
-          class="entry_img"
-          src="./images/restaurant-interior _1_mobile.jpg"
-          alt=""
-        />
+    <div class="restaurant_content">
+      <div class="restaurant_item right">
+        <div class="restaurant_item__content">
+          <h6 class="restaurant_headline">Amet minim mollit non</h6>
+          <p class="restaurant_logo">MIMIHO</p>
+          <p class="restaurant_text">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            sint. Velit officia consequat duis enim velit mollit. Exercitation
+            veniam consequat sunt nostrud amet.
+          </p>
+        </div>
+        <picture class="restaurant_picture">
+          <source
+            media="(max-width: 1023px)"
+            srcset="./images/restaurant-interior1_mobile.jpg"
+          />
+          <source
+            media="(max-width: 1279px)"
+            srcset="./images/restaurant-interior1_tablet.jpg"
+          />
+          <source
+            media="(min-width: 1281px)"
+            srcset="./images/restaurant-interior1_desktop.jpg"
+          />
+          <img
+            class="restaurant_img"
+            src="./images/restaurant-interior1_mobile.jpg"
+            alt="Image"
+          />
+        </picture>
       </div>
-      <div class="entry_item float_text left">
-        <p class="entry_text text_accented">
+      <div class="restaurant_item float_text left">
+        <p class="restaurant_text text_accented">
           Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
           sint. Velit officia consequat duis enim velit mollit. Exercitation
           veniam consequat sunt nostrud amet.
         </p>
-        <img
-          class="entry_img"
-          src="./images/restaurant-interior _2_mobile.jpg"
-          alt=""
-        />
+        <picture>
+          <source
+            media="(max-width: 1023px)"
+            srcset="./images/restaurant-interior2_mobile.jpg"
+          />
+          <source
+            media="(max-width: 1279px)"
+            srcset="./images/restaurant-interior1_tablet.jpg"
+          />
+          <source
+            media="(min-width: 1281px)"
+            srcset="./images/restaurant-interior2_desktop.jpg"
+          />
+          <img
+            class="restaurant_img"
+            src="./images/restaurant-interior2_mobile.jpg"
+            alt="Image"
+          />
+        </picture>
       </div>
     </div>
-  </div>
-  <div class="container">
+
     <div class="swiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <picture>
             <source
-              media="(max-width: 480px)"
+              media="(max-width: 1023px)"
               srcset="./images/sliders/smallSlider/firstSlideMobile.jpg"
             />
             <source
-              media="(max-width: 768px)"
+              media="(max-width: 1279px)"
               srcset="./images/sliders/smallSlider/firstSlideTablet.jpg"
             />
             <source
-              media="(min-width: 769px)"
+              media="(min-width: 1281px)"
               srcset="./images/sliders/smallSlider/firstSlideDesktop.jpg"
             />
             <img
@@ -55,15 +84,15 @@
         <div class="swiper-slide">
           <picture>
             <source
-              media="(max-width: 480px)"
+              media="(max-width: 1023px)"
               srcset="./images/sliders/smallSlider/firstSlide2Mobile.jpg"
             />
             <source
-              media="(max-width: 768px)"
+              media="(max-width: 1279px)"
               srcset="./images/sliders/smallSlider/firstSlide2Tablet.jpg"
             />
             <source
-              media="(min-width: 769px)"
+              media="(min-width: 1281px)"
               srcset="./images/sliders/smallSlider/firstSlide2Desktop.jpg"
             />
             <img
@@ -75,15 +104,15 @@
         <div class="swiper-slide">
           <picture>
             <source
-              media="(max-width: 480px)"
+              media="(max-width: 1023px)"
               srcset="./images/sliders/smallSlider/firstSlide3Mobile.jpg"
             />
             <source
-              media="(max-width: 768px)"
+              media="(max-width: 1279px)"
               srcset="./images/sliders/smallSlider/firstSlide3Tablet.jpg"
             />
             <source
-              media="(min-width: 769px)"
+              media="(min-width: 1281px)"
               srcset="./images/sliders/smallSlider/firstSlide3Desktop.jpg"
             />
             <img
@@ -94,16 +123,16 @@
         </div>
       </div>
       <div class="swiper-pagination swiper-pagination-right">
-        <div class="swiper-button-next">
+        <button class="swiper-button-next">
           <svg class="icon" height="32" width="32">
             <use href="./images/icons.svg#icon-arrow_left"></use>
           </svg>
-        </div>
-        <div class="swiper-button-prev">
+        </button>
+        <button class="swiper-button-prev">
           <svg class="icon" height="32" width="32">
             <use href="./images/icons.svg#icon-arrow_right"></use>
           </svg>
-        </div>
+        </button>
       </div>
     </div>
   </div>

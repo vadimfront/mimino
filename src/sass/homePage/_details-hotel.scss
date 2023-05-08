@@ -27,6 +27,10 @@
   .swiper-pagination {
     .icon {
       fill: #fff;
+      &:hover,
+      &:focus {
+        fill: $accentedTextColor;
+      }
     }
   }
   .button_wrapper {

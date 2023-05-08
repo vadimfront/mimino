@@ -14,16 +14,14 @@ $(function () {
   //     enabled: true,
   //   },
   // });
-  const swiperRight = new Swiper(".swiper", {
+  const swiper = new Swiper(".swiper", {
     // Optional parameters
     modules: [Navigation],
     slidesPerView: "auto",
     spaceBetween: 0,
-    loop: true,
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
-      enabled: true,
     },
   });
 });

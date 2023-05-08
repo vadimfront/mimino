@@ -1,13 +1,33 @@
 .details_restaurant {
   padding-top: 24px;
   padding-bottom: 24px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    url("../images/details_restaurant_bg.jpg");
+  .details_restaurant__inner {
+    @include respond(md) {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: flex-end;
+    }
+    .swiper {
+      width: 740px;
+    }
+    .swiper-wrapper {
+      height: auto;
+      .swiper-slide {
+        width: auto;
+        height: auto;
+      }
+    }
+  }
   .details_restaurant_content {
     width: 261px;
     margin-right: 0;
     margin-left: auto;
+    .details_restaurant_logo {
+      font-size: 64px;
+    }
   }
-  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-    url("../images/details_restaurant_bg.jpg");
   .details_restaurant_title {
     font-family: "MontserratBold";
     font-size: 20px;
@@ -21,12 +41,25 @@
   .swiper-pagination {
     .icon {
       fill: #fff;
+      &:hover,
+      &:focus {
+        fill: $accentedTextColor;
+      }
     }
   }
   .button_wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 16px;
-    justify-content: center;
+    text-align: center;
+    @include respond(md) {
+      padding-top: 31px;
+      padding-bottom: 71px;
+    }
+    & > .btn {
+      @include respond(md) {
+        display: block;
+      }
+      &:first-child {
+        margin-bottom: 16px;
+      }
+    }
   }
 }
