@@ -8,29 +8,35 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/mimino/index.8b65d283.css">
-    <script type="module" src="/mimino/index.197f0e33.js"></script><script src="/mimino/index.1cb71da0.js" nomodule="" defer=""></script>
+    <link rel="stylesheet" href="/mimino/index.8feb7565.css">
+    <script type="module" src="/mimino/index.db32f7cf.js"></script><script src="/mimino/index.dd49b081.js" nomodule="" defer=""></script>
   </head>
   <body>
     <!-- ❗️❗️❗️ Add partials like so for every page -->
     <header class="header">
   <div class="container">
     <a href="/" class="logo">MIMIHO</a>
-    <ul class="header_contacts">
-      <li class="header_contacts_item">
-        <a class="header_contacts_link" href="tel:+">
-          Ресторан
+    <ul class="header_list">
+      <li class="header_list__item">
+        <a class="header_list__link" href="#">Ресторан</a>
+      </li>
+      <li class="header_list__item">
+        <a class="header_list__contact" href="tel:+">
           <svg class="icon" height="24" width="24">
             <use href="/mimino/icons.4ade4290.svg#icon-phone"></use>
           </svg>
+          <span class="header_list__phone">095 555 95 33</span>
         </a>
       </li>
-      <li class="header_contacts_item">
-        <a class="header_contacts_link" href="tel:+">
-          Готель
+      <li class="header_list__item">
+        <a class="header_list__link" href="#">Готель</a>
+      </li>
+      <li class="header_list__item">
+        <a class="header_list__contact" href="tel:+">
           <svg class="icon" height="24" width="24">
             <use href="/mimino/icons.4ade4290.svg#icon-phone"></use>
           </svg>
+          <span class="header_list__phone">066 849 10 89</span>
         </a>
       </li>
     </ul>
@@ -50,101 +56,116 @@
       <h1 class="hero_title">MIMIHO</h1>
       <h2 class="hero_sub_title">Ресторанно-готельний комплекс</h2>
       <p class="hero_big_text">СМАК ЖИТТЯ 24/7</p>
-      <button class="btn open_modal" type="button" data-modal-id="#modal_room">
-        Забронювати столик
-      </button>
-      <button class="btn open_modal" type="button" data-modal-id="#modal_table">
-        Забронювати номер
-      </button>
     </div>
-    <ul class="hero_social">
-      <li class="hero_social_item">
-        <a href="#">
-          <svg class="icon">
-            <use href="/mimino/icons.4ade4290.svg#icon-instagram"></use>
-          </svg>
-        </a>
-      </li>
-      <li class="hero_social_item">
-        <a href="#">
-          <svg class="icon">
-            <use href="/mimino/icons.4ade4290.svg#icon-facebook"></use>
-          </svg>
-        </a>
-      </li>
-      <li class="hero_social_item">
-        <a href="#">
-          <svg class="icon">
-            <use href="/mimino/icons.4ade4290.svg#icon-telegram"></use>
-          </svg>
-        </a>
-      </li>
-    </ul>
+    <div class="hero_module">
+      <div class="hero_module__buttons">
+        <button class="btn open_modal" type="button" data-modal-id="#modal_room">
+          Забронювати столик
+        </button>
+        <button class="btn open_modal" type="button" data-modal-id="#modal_table">
+          Забронювати номер
+        </button>
+      </div>
+      <ul class="hero_social">
+        <li class="hero_social_item">
+          <a href="#">
+            <svg class="icon">
+              <use href="/mimino/icons.4ade4290.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="hero_social_item">
+          <a href="#">
+            <svg class="icon">
+              <use href="/mimino/icons.4ade4290.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="hero_social_item">
+          <a href="#">
+            <svg class="icon">
+              <use href="/mimino/icons.4ade4290.svg#icon-telegram"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
   </div>
 </section>
 
-    <section class="about_restaurant entry">
+    <section class="about_restaurant restaurant">
   <div class="container">
-    <h6 class="entry_headline">Amet minim mollit non</h6>
-    <p class="entry_logo section_logo">MIMIHO</p>
-    <div class="entry_content">
-      <div class="entry_item right">
-        <p class="entry_text">
-          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-          sint. Velit officia consequat duis enim velit mollit. Exercitation
-          veniam consequat sunt nostrud amet.
-        </p>
-        <img class="entry_img" src="/mimino/restaurant-interior%20_1_mobile.0b71c623.jpg" alt="">
+    <div class="restaurant_content">
+      <div class="restaurant_item right">
+        <div class="restaurant_item__content">
+          <h6 class="restaurant_headline">Amet minim mollit non</h6>
+          <p class="restaurant_logo">MIMIHO</p>
+          <p class="restaurant_text">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            sint. Velit officia consequat duis enim velit mollit. Exercitation
+            veniam consequat sunt nostrud amet.
+          </p>
+        </div>
+        <picture class="restaurant_picture">
+          <source media="(max-width: 1023px)" srcset="/mimino/restaurant-interior1_mobile.0b71c623.jpg">
+          <source media="(max-width: 1279px)" srcset="/mimino/restaurant-interior1_tablet.15d7e5c8.jpg">
+          <source media="(min-width: 1281px)" srcset="/mimino/restaurant-interior1_desktop.a9c80f20.jpg">
+          <img class="restaurant_img" src="/mimino/restaurant-interior1_mobile.0b71c623.jpg" alt="Image">
+        </picture>
       </div>
-      <div class="entry_item float_text left">
-        <p class="entry_text text_accented">
+      <div class="restaurant_item float_text left">
+        <p class="restaurant_text text_accented">
           Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
           sint. Velit officia consequat duis enim velit mollit. Exercitation
           veniam consequat sunt nostrud amet.
         </p>
-        <img class="entry_img" src="/mimino/restaurant-interior%20_2_mobile.62717b48.jpg" alt="">
+        <picture>
+          <source media="(max-width: 1023px)" srcset="/mimino/restaurant-interior2_mobile.62717b48.jpg">
+          <source media="(max-width: 1279px)" srcset="/mimino/restaurant-interior1_tablet.15d7e5c8.jpg">
+          <source media="(min-width: 1281px)" srcset="/mimino/restaurant-interior2_desktop.89ba5f0c.jpg">
+          <img class="restaurant_img" src="/mimino/restaurant-interior2_mobile.62717b48.jpg" alt="Image">
+        </picture>
       </div>
     </div>
-  </div>
-  <div class="container">
+
     <div class="swiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <picture>
-            <source media="(max-width: 480px)" srcset="/mimino/firstSlideMobile.d583da4f.jpg">
-            <source media="(max-width: 768px)" srcset="/mimino/firstSlideTablet.dc21af17.jpg">
-            <source media="(min-width: 769px)" srcset="/mimino/firstSlideDesktop.b7d5a72d.jpg">
+            <source media="(max-width: 1023px)" srcset="/mimino/firstSlideMobile.d583da4f.jpg">
+            <source media="(max-width: 1279px)" srcset="/mimino/firstSlideTablet.dc21af17.jpg">
+            <source media="(min-width: 1281px)" srcset="/mimino/firstSlideDesktop.b7d5a72d.jpg">
             <img src="/mimino/firstSlideMobile.d583da4f.jpg" alt="slide image">
           </picture>
         </div>
         <div class="swiper-slide">
           <picture>
-            <source media="(max-width: 480px)" srcset="/mimino/firstSlide2Mobile.af5dd0d5.jpg">
-            <source media="(max-width: 768px)" srcset="/mimino/firstSlide2Tablet.f5c715bd.jpg">
-            <source media="(min-width: 769px)" srcset="/mimino/firstSlide2Desktop.a847dc84.jpg">
+            <source media="(max-width: 1023px)" srcset="/mimino/firstSlide2Mobile.af5dd0d5.jpg">
+            <source media="(max-width: 1279px)" srcset="/mimino/firstSlide2Tablet.f5c715bd.jpg">
+            <source media="(min-width: 1281px)" srcset="/mimino/firstSlide2Desktop.a847dc84.jpg">
             <img src="/mimino/firstSlide2Mobile.af5dd0d5.jpg" alt="slide image">
           </picture>
         </div>
         <div class="swiper-slide">
           <picture>
-            <source media="(max-width: 480px)" srcset="/mimino/firstSlide3Mobile.6bcca041.jpg">
-            <source media="(max-width: 768px)" srcset="/mimino/firstSlide3Tablet.7f324aad.jpg">
-            <source media="(min-width: 769px)" srcset="/mimino/firstSlide3Desktop.9c548e70.jpg">
+            <source media="(max-width: 1023px)" srcset="/mimino/firstSlide3Mobile.6bcca041.jpg">
+            <source media="(max-width: 1279px)" srcset="/mimino/firstSlide3Tablet.7f324aad.jpg">
+            <source media="(min-width: 1281px)" srcset="/mimino/firstSlide3Desktop.9c548e70.jpg">
             <img src="/mimino/firstSlide3Mobile.6bcca041.jpg" alt="slide image">
           </picture>
         </div>
       </div>
       <div class="swiper-pagination swiper-pagination-right">
-        <div class="swiper-button-next">
+        <button class="swiper-button-next">
           <svg class="icon" height="32" width="32">
             <use href="/mimino/icons.4ade4290.svg#icon-arrow_left"></use>
           </svg>
-        </div>
-        <div class="swiper-button-prev">
+        </button>
+        <button class="swiper-button-prev">
           <svg class="icon" height="32" width="32">
             <use href="/mimino/icons.4ade4290.svg#icon-arrow_right"></use>
           </svg>
-        </div>
+        </button>
       </div>
     </div>
   </div>
@@ -160,88 +181,108 @@
         sint. Velit officia consequat duis enim velit mollit.
       </p>
     </div>
-  </div>
-  <div class="container">
-    <div class="swiper big-carousel">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <picture>
-            <source media="(max-width: 480px)" srcset="/mimino/thirdSlideMobile.490fef36.jpg">
-            <source media="(max-width: 768px)" srcset="/mimino/thirdSlideTablet.87572596.jpg">
-            <source media="(min-width: 769px)" srcset="/mimino/thirdSlideDesktop.fedf5504.jpg">
-            <img src="/mimino/thirdSlideMobile.490fef36.jpg" alt="slide image">
-          </picture>
+    <div class="details_restaurant__inner">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <picture>
+              <source media="(max-width: 1023px)" srcset="/mimino/thirdSlideMobile.490fef36.jpg">
+              <source media="(max-width: 1279px)" srcset="/mimino/thirdSlideTablet.87572596.jpg">
+              <source media="(min-width: 1281px)" srcset="/mimino/thirdSlideDesktop.fedf5504.jpg">
+              <img src="/mimino/thirdSlideMobile.490fef36.jpg" alt="slide image">
+            </picture>
+          </div>
+          <div class="swiper-slide">
+            <picture>
+              <source media="(max-width: 1023px)" srcset="/mimino/thirdSlide2Mobile.bac1efaa.jpg">
+              <source media="(max-width: 1279px)" srcset="/mimino/thirdSlide2Tablet.ec2cb29e.jpg">
+              <source media="(min-width: 1281px)" srcset="/mimino/thirdSlide2Desktop.5dbd179f.jpg">
+              <img src="/mimino/thirdSlide2Mobile.bac1efaa.jpg" alt="slide image">
+            </picture>
+          </div>
+          <div class="swiper-slide">
+            <picture>
+              <source media="(max-width: 1023px)" srcset="/mimino/thirdSlide3Mobile.789c4b80.jpg">
+              <source media="(max-width: 1279px)" srcset="/mimino/thirdSlide3Tablet.86743150.jpg">
+              <source media="(min-width: 1281px)" srcset="/mimino/thirdSlide3Desktop.34634b9e.jpg">
+              <img src="/mimino/thirdSlide3Mobile.789c4b80.jpg" alt="slide image">
+            </picture>
+          </div>
+          <div class="swiper-slide">
+            <picture>
+              <source media="(max-width: 1023px)" srcset="/mimino/thirdSlide4Mobile.e2ce026e.jpg">
+              <source media="(max-width: 1279px)" srcset="/mimino/thirdSlide4Tablet.cba944a6.jpg">
+              <source media="(min-width: 1281px)" srcset="/mimino/thirdSlide4Desktop.1e5266c1.jpg">
+              <img src="/mimino/thirdSlide4Mobile.e2ce026e.jpg" alt="slide image">
+            </picture>
+          </div>
+          <div class="swiper-slide">
+            <picture>
+              <source media="(max-width: 1023px)" srcset="/mimino/thirdSlideMobile.490fef36.jpg">
+              <source media="(max-width: 1279px)" srcset="/mimino/thirdSlideTablet.87572596.jpg">
+              <source media="(min-width: 1281px)" srcset="/mimino/thirdSlideDesktop.fedf5504.jpg">
+              <img src="/mimino/thirdSlideMobile.490fef36.jpg" alt="slide image">
+            </picture>
+          </div>
         </div>
-        <div class="swiper-slide">
-          <picture>
-            <source media="(max-width: 480px)" srcset="/mimino/thirdSlide2Mobile.bac1efaa.jpg">
-            <source media="(max-width: 768px)" srcset="/mimino/thirdSlide2Tablet.ec2cb29e.jpg">
-            <source media="(min-width: 769px)" srcset="/mimino/thirdSlide2Desktop.5dbd179f.jpg">
-            <img src="/mimino/thirdSlide2Mobile.bac1efaa.jpg" alt="slide image">
-          </picture>
-        </div>
-        <div class="swiper-slide">
-          <picture>
-            <source media="(max-width: 480px)" srcset="/mimino/thirdSlide3Mobile.789c4b80.jpg">
-            <source media="(max-width: 768px)" srcset="/mimino/thirdSlide3Tablet.86743150.jpg">
-            <source media="(min-width: 769px)" srcset="/mimino/thirdSlide3Desktop.34634b9e.jpg">
-            <img src="/mimino/thirdSlide3Mobile.789c4b80.jpg" alt="slide image">
-          </picture>
-        </div>
-        <div class="swiper-slide">
-          <picture>
-            <source media="(max-width: 480px)" srcset="/mimino/thirdSlide4Mobile.e2ce026e.jpg">
-            <source media="(max-width: 768px)" srcset="/mimino/thirdSlide4Tablet.cba944a6.jpg">
-            <source media="(min-width: 769px)" srcset="/mimino/thirdSlide4Desktop.1e5266c1.jpg">
-            <img src="/mimino/thirdSlide4Mobile.e2ce026e.jpg" alt="slide image">
-          </picture>
+        <div class="swiper-pagination">
+          <button class="swiper-button-prev">
+            <svg class="icon" height="32" width="32">
+              <use href="/mimino/icons.4ade4290.svg#icon-arrow_left"></use>
+            </svg>
+          </button>
+          <button class="swiper-button-next">
+            <svg class="icon" height="32" width="32">
+              <use href="/mimino/icons.4ade4290.svg#icon-arrow_right"></use>
+            </svg>
+          </button>
         </div>
       </div>
-      <div class="swiper-pagination">
-        <div class="swiper-button-next">
-          <svg class="icon" height="32" width="32">
-            <use href="/mimino/icons.4ade4290.svg#icon-arrow_left"></use>
-          </svg>
-        </div>
-        <div class="swiper-button-prev">
-          <svg class="icon" height="32" width="32">
-            <use href="/mimino/icons.4ade4290.svg#icon-arrow_right"></use>
-          </svg>
-        </div>
+      <div class="button_wrapper">
+        <button class="btn" type="button">Забронювати столик</button>
+        <button class="btn" type="button">Переглянути меню</button>
       </div>
-    </div>
-    <div class="button_wrapper">
-      <button class="btn" type="button">Забронювати столик</button>
-      <button class="btn" type="button">Переглянути меню</button>
     </div>
   </div>
 </section>
 
-    <section class="about_hotel entry">
+    <section class="about_hotel restaurant">
   <div class="container">
-    <h6 class="entry_headline text_right">Amet minim mollit non</h6>
-    <p class="entry_logo text_right section_logo">MIMIHO</p>
-    <div class="entry_content">
-      <div class="entry_item left">
-        <p class="entry_text">
-          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-          sint. Velit officia consequat duis enim velit mollit. Exercitation
-          veniam consequat sunt nostrud amet.
-        </p>
-        <img class="entry_img" src="/mimino/restaurant-interior%20_1_mobile.0b71c623.jpg" alt="">
+    <div class="restaurant_content">
+      <div class="restaurant_item left">
+        <div class="restaurant_item__content">
+          <h6 class="restaurant_headline text_right">Amet minim mollit non</h6>
+          <p class="restaurant_logo text_right section_logo">MIMIHO</p>
+          <p class="restaurant_text">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            sint. Velit officia consequat duis enim velit mollit. Exercitation
+            veniam consequat sunt nostrud amet.
+          </p>
+        </div>
+        <picture class="restaurant_picture">
+          <source media="(max-width: 1023px)" srcset="/mimino/restaurant-interior1_mobile.0b71c623.jpg">
+          <source media="(max-width: 1279px)" srcset="/mimino/restaurant-interior1_tablet.15d7e5c8.jpg">
+          <source media="(min-width: 1281px)" srcset="/mimino/restaurant-interior1_desktop.a9c80f20.jpg">
+          <img class="restaurant_img" src="/mimino/restaurant-interior1_mobile.0b71c623.jpg" alt="Image">
+        </picture>
       </div>
-      <div class="entry_item float_text right">
-        <p class="entry_text text_accented">
+      <div class="restaurant_item float_text right">
+        <p class="restaurant_text text_accented">
           Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
           sint. Velit officia consequat duis enim velit mollit. Exercitation
           veniam consequat sunt nostrud amet.
         </p>
-        <img class="entry_img" src="/mimino/restaurant-interior%20_2_mobile.62717b48.jpg" alt="">
+        <picture>
+          <source media="(max-width: 1023px)" srcset="/mimino/restaurant-interior2_mobile.62717b48.jpg">
+          <source media="(max-width: 1279px)" srcset="/mimino/restaurant-interior1_tablet.15d7e5c8.jpg">
+          <source media="(min-width: 1281px)" srcset="/mimino/restaurant-interior2_desktop.89ba5f0c.jpg">
+          <img class="restaurant_img" src="/mimino/restaurant-interior2_mobile.62717b48.jpg" alt="Image">
+        </picture>
       </div>
     </div>
   </div>
-  <div class="swiper_side container">
-    <div class="swiper">
+  <div class="container">
+    <div class="swiper swiper_left">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <picture>
@@ -277,16 +318,16 @@
         </div>
       </div>
       <div class="swiper-pagination">
-        <div class="swiper-button-next">
+        <button class="swiper-button-next">
           <svg class="icon" height="32" width="32">
             <use href="/mimino/icons.4ade4290.svg#icon-arrow_left"></use>
           </svg>
-        </div>
-        <div class="swiper-button-prev">
+        </button>
+        <button class="swiper-button-prev">
           <svg class="icon" height="32" width="32">
             <use href="/mimino/icons.4ade4290.svg#icon-arrow_right"></use>
           </svg>
-        </div>
+        </button>
       </div>
     </div>
   </div>
@@ -303,8 +344,8 @@
       </p>
     </div>
   </div>
-  <div class="swiper_side container">
-    <div class="swiper">
+  <div class="container">
+    <div class="swiper swiper_left">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <picture>
@@ -340,16 +381,16 @@
         </div>
       </div>
       <div class="swiper-pagination swiper-pagination-right">
-        <div class="swiper-button-next">
+        <button class="swiper-button-prev">
           <svg class="icon" height="32" width="32">
             <use href="/mimino/icons.4ade4290.svg#icon-arrow_left"></use>
           </svg>
-        </div>
-        <div class="swiper-button-prev">
+        </button>
+        <button class="swiper-button-next">
           <svg class="icon" height="32" width="32">
             <use href="/mimino/icons.4ade4290.svg#icon-arrow_right"></use>
           </svg>
-        </div>
+        </button>
       </div>
     </div>
   </div>
@@ -538,32 +579,32 @@
     <a href="/" class="logo">MIMIHO</a>
     <div class="footer_elemets">
       <ul class="footer_nav">
-        <li class="footer_nav_item">
+        <li class="footer_nav__item">
           <a href="/"> Головна </a>
         </li>
-        <li class="footer_nav_item">
+        <li class="footer_nav__item">
           <a href="/"> Ресторан </a>
         </li>
-        <li class="footer_nav_item">
+        <li class="footer_nav__item">
           <a href="/"> Готель </a>
         </li>
       </ul>
       <ul class="footer_social">
-        <li class="footer_social_item">
+        <li class="footer_social__item">
           <a href="/">
             <svg class="icon" height="32" width="32">
               <use href="/mimino/icons.4ade4290.svg#icon-telegram"></use>
             </svg>
           </a>
         </li>
-        <li class="footer_social_item">
+        <li class="footer_social__item">
           <a href="/">
             <svg class="icon" height="32" width="32">
               <use href="/mimino/icons.4ade4290.svg#icon-facebook"></use>
             </svg>
           </a>
         </li>
-        <li class="footer_social_item">
+        <li class="footer_social__item">
           <a href="/">
             <svg class="icon" height="32" width="32">
               <use href="/mimino/icons.4ade4290.svg#icon-instagram"></use>
