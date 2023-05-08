@@ -8,15 +8,18 @@
       display: flex;
       flex-direction: row-reverse;
       align-items: flex-end;
+      gap: 29px;
     }
     .swiper {
-      width: 740px;
+      @include respond(md) {
+        width: 740px;
+      }
     }
     .swiper-wrapper {
-      height: auto;
       .swiper-slide {
-        width: auto;
-        height: auto;
+        width: 254px;
+        height: 254px;
+        margin-right: 34px;
       }
     }
   }
@@ -24,8 +27,14 @@
     width: 261px;
     margin-right: 0;
     margin-left: auto;
+    @include respond(md) {
+      width: 716px;
+    }
     .details_restaurant_logo {
-      font-size: 64px;
+      font-size: 40px;
+      @include respond(md) {
+        font-size: 64px;
+      }
     }
   }
   .details_restaurant_title {
@@ -33,10 +42,16 @@
     font-size: 20px;
     color: $white;
     margin-bottom: 20px;
+    @include respond(md) {
+      font-size: 24px;
+    }
   }
   .details_restaurant_text {
     font-family: "MontserratSemiBold";
     color: $text_description;
+    @include respond(md) {
+      font-size: 16px;
+    }
   }
   .swiper-pagination {
     .icon {

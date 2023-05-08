@@ -9,9 +9,37 @@
     width: 243px;
     display: flex;
     flex-direction: column;
-    & > .details_hotel_logo,
-    & > .details_hotel_title {
-      margin-left: auto;
+    align-items: flex-end;
+    @include respond(md) {
+      width: 740px;
+    }
+    .section_logo {
+      margin-right: -0.3em;
+      @include respond(md) {
+        font-size: 64px;
+      }
+    }
+  }
+  .details_hotel__inner {
+    @include respond(md) {
+      display: flex;
+      align-items: flex-end;
+      gap: 29px;
+    }
+    & > .swiper {
+      @include respond(md) {
+        width: 740px;
+        padding-left: 13px;
+        padding-right: 0;
+        padding-left: 0;
+      }
+      .swiper-slide {
+        @include respond(md) {
+          width: 254px;
+          height: 254px;
+          margin-right: 34px;
+        }
+      }
     }
   }
   .details_hotel_title {
@@ -19,10 +47,17 @@
     font-size: 20px;
     color: $white;
     margin-bottom: 20px;
+    @include respond(md) {
+      font-size: 24px;
+    }
   }
   .details_hotel_text {
     font-family: "MontserratSemiBold";
     color: $text_description;
+    @include respond(md) {
+      width: 539px;
+      font-size: 16px;
+    }
   }
   .swiper-pagination {
     .icon {
@@ -34,9 +69,14 @@
     }
   }
   .button_wrapper {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 16px;
-    display: flex;
+    text-align: center;
+    @include respond(md) {
+      width: 236px;
+      padding-top: 31px;
+      padding-bottom: 71px;
+    }
+    & > .btn:first-child {
+      margin-bottom: 16px;
+    }
   }
 }
