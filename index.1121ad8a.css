@@ -829,7 +829,7 @@ address {
 
 @media only screen and (min-width: 1024px) {
   .restaurant .restaurant_content .restaurant_item.left {
-    margin-top: -48px;
+    margin-top: -40px;
   }
 }
 
@@ -853,8 +853,8 @@ address {
 }
 
 .swiper-slide {
-  width: 250px;
-  height: 250px;
+  width: 254px;
+  height: 254px;
   margin-right: 25px;
 }
 
@@ -913,21 +913,19 @@ address {
   .details_restaurant .details_restaurant__inner {
     flex-direction: row-reverse;
     align-items: flex-end;
+    gap: 29px;
     display: flex;
+  }
+
+  .details_restaurant .details_restaurant__inner .swiper {
+    width: 740px;
   }
 }
 
-.details_restaurant .details_restaurant__inner .swiper {
-  width: 740px;
-}
-
-.details_restaurant .details_restaurant__inner .swiper-wrapper {
-  height: auto;
-}
-
 .details_restaurant .details_restaurant__inner .swiper-wrapper .swiper-slide {
-  width: auto;
-  height: auto;
+  width: 254px;
+  height: 254px;
+  margin-right: 34px;
 }
 
 .details_restaurant .details_restaurant_content {
@@ -936,8 +934,20 @@ address {
   margin-right: 0;
 }
 
+@media only screen and (min-width: 1024px) {
+  .details_restaurant .details_restaurant_content {
+    width: 716px;
+  }
+}
+
 .details_restaurant .details_restaurant_content .details_restaurant_logo {
-  font-size: 64px;
+  font-size: 40px;
+}
+
+@media only screen and (min-width: 1024px) {
+  .details_restaurant .details_restaurant_content .details_restaurant_logo {
+    font-size: 64px;
+  }
 }
 
 .details_restaurant .details_restaurant_title {
@@ -947,9 +957,21 @@ address {
   font-size: 20px;
 }
 
+@media only screen and (min-width: 1024px) {
+  .details_restaurant .details_restaurant_title {
+    font-size: 24px;
+  }
+}
+
 .details_restaurant .details_restaurant_text {
   color: #bababa;
   font-family: MontserratSemiBold;
+}
+
+@media only screen and (min-width: 1024px) {
+  .details_restaurant .details_restaurant_text {
+    font-size: 16px;
+  }
 }
 
 .details_restaurant .swiper-pagination .icon {
@@ -990,11 +1012,42 @@ address {
 .details_hotel .details_hotel_content {
   width: 243px;
   flex-direction: column;
+  align-items: flex-end;
   display: flex;
 }
 
-.details_hotel .details_hotel_content > .details_hotel_logo, .details_hotel .details_hotel_content > .details_hotel_title {
-  margin-left: auto;
+@media only screen and (min-width: 1024px) {
+  .details_hotel .details_hotel_content {
+    width: 740px;
+  }
+}
+
+.details_hotel .details_hotel_content .section_logo {
+  margin-right: -.3em;
+}
+
+@media only screen and (min-width: 1024px) {
+  .details_hotel .details_hotel_content .section_logo {
+    font-size: 64px;
+  }
+
+  .details_hotel .details_hotel__inner {
+    align-items: flex-end;
+    gap: 29px;
+    display: flex;
+  }
+
+  .details_hotel .details_hotel__inner > .swiper {
+    width: 740px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .details_hotel .details_hotel__inner > .swiper .swiper-slide {
+    width: 254px;
+    height: 254px;
+    margin-right: 34px;
+  }
 }
 
 .details_hotel .details_hotel_title {
@@ -1004,9 +1057,22 @@ address {
   font-size: 20px;
 }
 
+@media only screen and (min-width: 1024px) {
+  .details_hotel .details_hotel_title {
+    font-size: 24px;
+  }
+}
+
 .details_hotel .details_hotel_text {
   color: #bababa;
   font-family: MontserratSemiBold;
+}
+
+@media only screen and (min-width: 1024px) {
+  .details_hotel .details_hotel_text {
+    width: 539px;
+    font-size: 16px;
+  }
 }
 
 .details_hotel .swiper-pagination .icon {
@@ -1018,10 +1084,19 @@ address {
 }
 
 .details_hotel .button_wrapper {
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 16px;
-  display: flex;
+  text-align: center;
+}
+
+@media only screen and (min-width: 1024px) {
+  .details_hotel .button_wrapper {
+    width: 236px;
+    padding-top: 31px;
+    padding-bottom: 71px;
+  }
+}
+
+.details_hotel .button_wrapper > .btn:first-child {
+  margin-bottom: 16px;
 }
 
 .contacts {
@@ -1349,4 +1424,4 @@ address {
   fill: #f3c653;
 }
 
-/*# sourceMappingURL=index.8feb7565.css.map */
+/*# sourceMappingURL=index.1121ad8a.css.map */
