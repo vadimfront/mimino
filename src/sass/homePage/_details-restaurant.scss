@@ -2,7 +2,20 @@
   padding-top: 24px;
   padding-bottom: 24px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-    url("../images/details_restaurant_bg.jpg");
+    url("../images/details_restaurant_mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  @include respond(md) {
+    padding-bottom: 32px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url("../images/details_restaurant_tablet.jpg");
+  }
+  @include respond(lg) {
+    padding-bottom: 32px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url("../images/details_restaurant_desktop.jpg");
+  }
   .details_restaurant__inner {
     @include respond(md) {
       display: flex;
@@ -12,7 +25,7 @@
     }
     .swiper {
       @include respond(md) {
-        width: 740px;
+        width: 652px;
       }
     }
     .swiper-wrapper {
@@ -28,7 +41,7 @@
     margin-right: 0;
     margin-left: auto;
     @include respond(md) {
-      width: 716px;
+      width: 693px;
     }
     .details_restaurant_logo {
       font-size: 40px;

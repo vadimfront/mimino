@@ -4,12 +4,10 @@
   background-color: $footer_bg;
   & > .container {
     display: flex;
-    padding: 0 30px;
+    justify-content: space-around;
   }
   .logo {
     display: flex;
-    flex-basis: 200px;
-    flex-grow: 1;
     justify-content: center;
     align-items: center;
     color: $accentedTextColor;
@@ -17,6 +15,18 @@
     font-family: filmP3;
     font-size: 40px;
     line-height: 1;
+    flex-basis: 40%;
+    @include respond(md) {
+      font-size: 63px;
+    }
+  }
+  .footer_module {
+    @include respond(md) {
+      flex-basis: 60%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
   }
   .footer_nav {
     .footer_nav__item {
@@ -43,12 +53,39 @@
     .footer_social__item {
       display: inline-block;
       margin-right: 20px;
+      @include respond(md) {
+        display: block;
+        width: 144px;
+        margin-bottom: 12px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
       &:last-child {
         margin-right: 0;
       }
     }
     .icon {
       fill: $accentedTextColor;
+    }
+    .footer_social__link {
+      @include respond(md) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-family: "MontserratRegular";
+        font-size: 16px;
+        color: $accentedTextColor;
+        padding: 7px 12px;
+        border: 0.5px solid $accentedTextColor;
+        border-radius: 2px;
+      }
+    }
+    .footer_social__name {
+      display: none;
+      @include respond(md) {
+        display: block;
+      }
     }
   }
 }

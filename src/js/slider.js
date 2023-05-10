@@ -2,18 +2,6 @@ const $ = require("jquery");
 import Swiper, { Navigation } from "swiper";
 
 $(function () {
-  // const swiperLeft = new Swiper(".left_side .swiper", {
-  //   // Optional parameters
-  //   modules: [Navigation],
-  //   slidesPerView: "auto",
-  //   slidesPerGroup: 1,
-  //   spaceBetween: 0,
-  //   navigation: {
-  //     nextEl: ".swiper-button-next",
-  //     prevEl: ".swiper-button-prev",
-  //     enabled: true,
-  //   },
-  // });
   const swiper = new Swiper(".swiper", {
     // Optional parameters
     modules: [Navigation],

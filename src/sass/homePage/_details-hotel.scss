@@ -1,17 +1,26 @@
 .details_hotel {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("../images/details_hotel_bg.jpg");
-  background-size: cover;
+    url("../images/details_hotel_mobile.jpg");
+  background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
   padding-top: 24px;
   padding-bottom: 40px;
+  @include respond(md) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+      url("../images/details_hotel_tablet.jpg");
+  }
+  @include respond(lg) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+      url("../images/details_hotel_desktop.jpg");
+  }
   .details_hotel_content {
     width: 243px;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     @include respond(md) {
-      width: 740px;
+      width: 693px;
     }
     .section_logo {
       margin-right: -0.3em;
@@ -28,7 +37,7 @@
     }
     & > .swiper {
       @include respond(md) {
-        width: 740px;
+        width: 652px;
         padding-left: 13px;
         padding-right: 0;
         padding-left: 0;

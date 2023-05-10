@@ -50,7 +50,10 @@ address {
   padding-right: 15px;
   margin: 0 auto;
   @include respond(md) {
-    max-width: 1024px;
+    max-width: 960px;
+  }
+  @include respond(lg) {
+    max-width: 1110px;
   }
 }
 

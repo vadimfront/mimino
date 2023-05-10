@@ -15,6 +15,7 @@
   "license": "ISC",
   "dependencies": {
     "modern-normalize": "^1.1.0",
+    "ol": "^7.3.0",
     "parcel": "latest",
     "posthtml-shorten": "^1.0.0",
     "slick-slider": "^1.8.2",
