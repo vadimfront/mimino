@@ -732,6 +732,16 @@ address {
   }
 }
 
+.restaurant_page {
+  background-image: linear-gradient(#000000a6, #000000a6), url("hero_restaurant_mobile.74f8012b.jpg");
+}
+
+@media only screen and (min-width: 1024px) {
+  .restaurant_page {
+    background-image: linear-gradient(#000000a6, #000000a6), url("hero_restaurant_desktop.70c86485.jpg");
+  }
+}
+
 .restaurant {
   background-color: #fffdee;
   padding-top: 16px;
@@ -815,10 +825,16 @@ address {
 @media only screen and (min-width: 1024px) {
   .restaurant .restaurant_content > .restaurant_item > .restaurant_item__content {
     width: 419px;
-    width: 518px;
     flex-direction: column;
+    justify-content: center;
     margin-bottom: 0;
     display: flex;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .restaurant .restaurant_content > .restaurant_item > .restaurant_item__content {
+    width: 518px;
   }
 }
 
@@ -874,6 +890,12 @@ address {
   }
 }
 
+@media only screen and (min-width: 1280px) {
+  .swiper {
+    width: 548px;
+  }
+}
+
 .swiper-slide {
   width: 254px;
   height: 254px;
@@ -884,6 +906,13 @@ address {
   .swiper-slide {
     width: 194px;
     height: 194px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .swiper-slide {
+    width: 254px;
+    height: 254px;
   }
 }
 
@@ -923,364 +952,6 @@ address {
 
 .swiper_left {
   margin-left: 0;
-}
-
-.details_restaurant {
-  background-image: linear-gradient(#000000a6, #000000a6), url("details_restaurant_mobile.998db739.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding-top: 24px;
-  padding-bottom: 24px;
-}
-
-@media only screen and (min-width: 1024px) {
-  .details_restaurant {
-    background-image: linear-gradient(#000000a6, #000000a6), url("details_restaurant_tablet.31fb5b02.jpg");
-    padding-bottom: 32px;
-  }
-}
-
-@media only screen and (min-width: 1280px) {
-  .details_restaurant {
-    background-image: linear-gradient(#000000a6, #000000a6), url("details_restaurant_desktop.22eed253.jpg");
-    padding-bottom: 32px;
-  }
-}
-
-@media only screen and (min-width: 1024px) {
-  .details_restaurant .details_restaurant__inner {
-    flex-direction: row-reverse;
-    align-items: flex-end;
-    gap: 29px;
-    display: flex;
-  }
-
-  .details_restaurant .details_restaurant__inner .swiper {
-    width: 652px;
-  }
-}
-
-.details_restaurant .details_restaurant__inner .swiper-wrapper .swiper-slide {
-  width: 254px;
-  height: 254px;
-  margin-right: 34px;
-}
-
-.details_restaurant .details_restaurant_content {
-  width: 261px;
-  margin-left: auto;
-  margin-right: 0;
-}
-
-@media only screen and (min-width: 1024px) {
-  .details_restaurant .details_restaurant_content {
-    width: 693px;
-  }
-}
-
-.details_restaurant .details_restaurant_content .details_restaurant_logo {
-  font-size: 40px;
-}
-
-@media only screen and (min-width: 1024px) {
-  .details_restaurant .details_restaurant_content .details_restaurant_logo {
-    font-size: 64px;
-  }
-}
-
-.details_restaurant .details_restaurant_title {
-  color: #fff;
-  margin-bottom: 20px;
-  font-family: MontserratBold;
-  font-size: 20px;
-}
-
-@media only screen and (min-width: 1024px) {
-  .details_restaurant .details_restaurant_title {
-    font-size: 24px;
-  }
-}
-
-.details_restaurant .details_restaurant_text {
-  color: #bababa;
-  font-family: MontserratSemiBold;
-}
-
-@media only screen and (min-width: 1024px) {
-  .details_restaurant .details_restaurant_text {
-    font-size: 16px;
-  }
-}
-
-.details_restaurant .swiper-pagination .icon {
-  fill: #fff;
-}
-
-.details_restaurant .swiper-pagination .icon:hover, .details_restaurant .swiper-pagination .icon:focus {
-  fill: #f3c653;
-}
-
-.details_restaurant .button_wrapper {
-  text-align: center;
-}
-
-@media only screen and (min-width: 1024px) {
-  .details_restaurant .button_wrapper {
-    padding-top: 31px;
-    padding-bottom: 71px;
-  }
-
-  .details_restaurant .button_wrapper > .btn {
-    display: block;
-  }
-}
-
-.details_restaurant .button_wrapper > .btn:first-child {
-  margin-bottom: 16px;
-}
-
-.details_hotel {
-  background-image: linear-gradient(#000000b3, #000000b3), url("details_hotel_mobile.eb113ca2.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding-top: 24px;
-  padding-bottom: 40px;
-}
-
-@media only screen and (min-width: 1024px) {
-  .details_hotel {
-    background-image: linear-gradient(#000000b3, #000000b3), url("details_hotel_tablet.b43d6e3e.jpg");
-  }
-}
-
-@media only screen and (min-width: 1280px) {
-  .details_hotel {
-    background-image: linear-gradient(#000000b3, #000000b3), url("details_hotel_desktop.83946b32.jpg");
-  }
-}
-
-.details_hotel .details_hotel_content {
-  width: 243px;
-  flex-direction: column;
-  align-items: flex-end;
-  display: flex;
-}
-
-@media only screen and (min-width: 1024px) {
-  .details_hotel .details_hotel_content {
-    width: 693px;
-  }
-}
-
-.details_hotel .details_hotel_content .section_logo {
-  margin-right: -.3em;
-}
-
-@media only screen and (min-width: 1024px) {
-  .details_hotel .details_hotel_content .section_logo {
-    font-size: 64px;
-  }
-
-  .details_hotel .details_hotel__inner {
-    align-items: flex-end;
-    gap: 29px;
-    display: flex;
-  }
-
-  .details_hotel .details_hotel__inner > .swiper {
-    width: 652px;
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  .details_hotel .details_hotel__inner > .swiper .swiper-slide {
-    width: 254px;
-    height: 254px;
-    margin-right: 34px;
-  }
-}
-
-.details_hotel .details_hotel_title {
-  color: #fff;
-  margin-bottom: 20px;
-  font-family: MontserratBold;
-  font-size: 20px;
-}
-
-@media only screen and (min-width: 1024px) {
-  .details_hotel .details_hotel_title {
-    font-size: 24px;
-  }
-}
-
-.details_hotel .details_hotel_text {
-  color: #bababa;
-  font-family: MontserratSemiBold;
-}
-
-@media only screen and (min-width: 1024px) {
-  .details_hotel .details_hotel_text {
-    width: 539px;
-    font-size: 16px;
-  }
-}
-
-.details_hotel .swiper-pagination .icon {
-  fill: #fff;
-}
-
-.details_hotel .swiper-pagination .icon:hover, .details_hotel .swiper-pagination .icon:focus {
-  fill: #f3c653;
-}
-
-.details_hotel .button_wrapper {
-  text-align: center;
-}
-
-@media only screen and (min-width: 1024px) {
-  .details_hotel .button_wrapper {
-    width: 236px;
-    padding-top: 31px;
-    padding-bottom: 71px;
-  }
-}
-
-.details_hotel .button_wrapper > .btn:first-child {
-  margin-bottom: 16px;
-}
-
-.contacts {
-  background-color: #fffdee;
-  padding-top: 36px;
-  padding-bottom: 32px;
-}
-
-@media only screen and (min-width: 1024px) {
-  .contacts .contacts_wrapper {
-    justify-content: space-between;
-    display: flex;
-  }
-}
-
-.contacts .section_logo {
-  color: #494848;
-}
-
-@media only screen and (min-width: 1024px) {
-  .contacts .section_logo {
-    margin-bottom: 8px;
-    font-size: 64px;
-  }
-}
-
-.contacts .contacts_title {
-  margin-bottom: 16px;
-  font-size: 16px;
-}
-
-@media only screen and (min-width: 1024px) {
-  .contacts .contacts_title {
-    margin-bottom: 52px;
-  }
-}
-
-.contacts .contact {
-  width: 100px;
-  color: #c79002;
-  font-family: MontserratMedium;
-  font-size: 20px;
-}
-
-.contacts .contacts_list {
-  margin-bottom: 32px;
-}
-
-.contacts .contacts_list > li {
-  flex-flow: column wrap;
-  gap: 22px;
-  margin-bottom: 16px;
-  display: flex;
-}
-
-@media only screen and (min-width: 414px) {
-  .contacts .contacts_list > li {
-    flex-direction: row;
-    align-items: center;
-  }
-}
-
-@media only screen and (min-width: 1024px) {
-  .contacts .contacts_list > li {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 8px;
-  }
-}
-
-.contacts .contacts_list .dedicated_block {
-  max-width: 285px;
-  color: #494848;
-  letter-spacing: .02em;
-  background-color: #fff;
-  border: .5px solid #c79002;
-  border-radius: 2px;
-  align-items: center;
-  gap: 11px;
-  padding: 7px;
-  font-family: MontserratRegular;
-  font-size: 14px;
-  display: flex;
-}
-
-.contacts .contacts_list .dedicated_block > .icon {
-  fill: #c79002;
-}
-
-@media only screen and (min-width: 414px) {
-  .contacts .contacts_list > .contact_address {
-    padding-left: 122px;
-  }
-}
-
-@media only screen and (min-width: 1024px) {
-  .contacts .contacts_list > .contact_address {
-    margin-top: 48px;
-    padding-left: 0;
-  }
-}
-
-.contacts .contacts_list > .contact_address > address {
-  font-size: 16px;
-}
-
-.contacts .contacts_list > .contact_address > address > span {
-  flex: 1;
-}
-
-.contacts .contacts_list .contact_hotel_phones .contact_hotel_phone {
-  color: #494848;
-}
-
-.contacts .contacts_map > iframe {
-  width: 100%;
-  height: 220px;
-  border-radius: 2px;
-  box-shadow: 5px 5px 70px 17px #00000040;
-}
-
-@media only screen and (min-width: 414px) {
-  .contacts .contacts_map > iframe {
-    width: 384px;
-  }
-}
-
-@media only screen and (min-width: 1024px) {
-  .contacts .contacts_map > iframe {
-    width: 535px;
-    height: 412px;
-  }
 }
 
 .modal {
@@ -1595,4 +1266,4 @@ address {
   }
 }
 
-/*# sourceMappingURL=index.b6d36280.css.map */
+/*# sourceMappingURL=restaurant.d10fd67d.css.map */
