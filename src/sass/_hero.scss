@@ -1,11 +1,14 @@
 .hero {
-  padding-top: 62px;
+  padding-top: 95px;
   padding-bottom: 20px;
   background-image: linear-gradient(rgb(0, 0, 0, 0.65), rgb(0, 0, 0, 0.65)),
     url("../images/hero_mobile.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  @include respond(sm) {
+    padding-top: 62px;
+  }
   @include respond(md) {
     padding-top: 188px;
     background-image: linear-gradient(rgb(0, 0, 0, 0.65), rgb(0, 0, 0, 0.65)),
@@ -60,12 +63,15 @@
     text-align: center;
     & > .hero_title {
       font-family: "filmP3";
-      font-size: 96px;
+      font-size: 75px;
       line-height: 1.07;
       letter-spacing: 0.3em;
       color: $white;
       padding-left: 0.3em;
       margin-bottom: 24px;
+      @include respond(sm) {
+        font-size: 96px;
+      }
       @include respond(md) {
         font-size: 128px;
       }
