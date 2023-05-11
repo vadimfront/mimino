@@ -877,13 +877,14 @@ address {
 
 .section_menu {
   background-color: #fffdee;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-bottom: 32px;
 }
 
 @media only screen and (min-width: 1024px) {
   .section_menu {
     background-color: #f0ecd6;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
 
@@ -961,6 +962,22 @@ address {
 
 .section_menu .restaurant_menu__item > .restaurant_menu__item__dish {
   width: 220px;
+}
+
+.section_menu .btn {
+  background-color: #000;
+  border-color: #fffdee;
+  margin-top: 32px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+@media only screen and (min-width: 1024px) {
+  .section_menu .btn {
+    margin-top: 32px;
+    margin-right: 0;
+  }
 }
 
 .swiper {
@@ -1353,4 +1370,4 @@ address {
   }
 }
 
-/*# sourceMappingURL=restaurant.25457357.css.map */
+/*# sourceMappingURL=restaurant.a057238f.css.map */
