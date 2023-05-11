@@ -8,6 +8,7 @@
   & > .container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
   .logo {
     font-family: "filmP3";
@@ -71,7 +72,38 @@
     display: flex;
     gap: 20px;
     align-items: center;
-    margin-left: auto;
-    padding-top: 3px;
+    & > .header_list__item:nth-child(2) {
+      @include respond(lg) {
+        margin-right: 72px;
+      }
+    }
+  }
+  .hero_social {
+    display: none;
+    flex-wrap: wrap;
+    gap: 23px;
+    align-items: center;
+    &.mobile_hidden {
+      display: none;
+      @include respond(lg) {
+        display: flex;
+      }
+    }
+    .icon {
+      height: 24px;
+      width: 24px;
+      fill: $accentedTextColor;
+      transition-property: fill;
+      transition-duration: 0.25s;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .hero_social_item {
+      & > a:hover,
+      & > a:focus {
+        & > .icon {
+          fill: $accented_yellow;
+        }
+      }
+    }
   }
 }

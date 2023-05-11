@@ -12,7 +12,7 @@
       url("../images/details_restaurant_tablet.jpg");
   }
   @include respond(lg) {
-    padding-bottom: 32px;
+    padding-bottom: 45px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
       url("../images/details_restaurant_desktop.jpg");
   }
