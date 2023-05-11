@@ -551,8 +551,14 @@ address {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 62px;
+  padding-top: 95px;
   padding-bottom: 20px;
+}
+
+@media only screen and (min-width: 414px) {
+  .hero {
+    padding-top: 62px;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -619,8 +625,14 @@ address {
   margin-bottom: 24px;
   padding-left: .3em;
   font-family: filmP3;
-  font-size: 96px;
+  font-size: 75px;
   line-height: 1.07;
+}
+
+@media only screen and (min-width: 414px) {
+  .hero .hero_content > .hero_title {
+    font-size: 96px;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -1186,11 +1198,17 @@ address {
 }
 
 .contacts .contacts_list > li {
-  flex-wrap: wrap;
-  align-items: center;
+  flex-flow: column wrap;
   gap: 22px;
   margin-bottom: 16px;
   display: flex;
+}
+
+@media only screen and (min-width: 414px) {
+  .contacts .contacts_list > li {
+    flex-direction: row;
+    align-items: center;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -1220,8 +1238,10 @@ address {
   fill: #c79002;
 }
 
-.contacts .contacts_list > .contact_address {
-  padding-left: 122px;
+@media only screen and (min-width: 414px) {
+  .contacts .contacts_list > .contact_address {
+    padding-left: 122px;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -1244,10 +1264,16 @@ address {
 }
 
 .contacts .contacts_map > iframe {
-  width: 384px;
+  width: 100%;
   height: 220px;
   border-radius: 2px;
   box-shadow: 5px 5px 70px 17px #00000040;
+}
+
+@media only screen and (min-width: 414px) {
+  .contacts .contacts_map > iframe {
+    width: 384px;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -1569,4 +1595,4 @@ address {
   }
 }
 
-/*# sourceMappingURL=index.4c4faf52.css.map */
+/*# sourceMappingURL=index.b6d36280.css.map */
