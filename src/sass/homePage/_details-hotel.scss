@@ -82,10 +82,11 @@
   }
   .button_wrapper {
     text-align: center;
+    margin-top: 16px;
     @include respond(md) {
       width: 236px;
-      padding-top: 31px;
-      padding-bottom: 71px;
+      margin-top: 0;
+      padding-bottom: 54px;
     }
     & > .btn:first-child {
       margin-bottom: 16px;

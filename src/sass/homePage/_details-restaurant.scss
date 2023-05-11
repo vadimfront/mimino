@@ -80,9 +80,10 @@
   }
   .button_wrapper {
     text-align: center;
+    margin-top: 16px;
     @include respond(md) {
-      padding-top: 31px;
-      padding-bottom: 71px;
+      margin-top: 0;
+      padding-bottom: 54px;
     }
     & > .btn {
       @include respond(md) {

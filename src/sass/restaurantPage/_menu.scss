@@ -1,0 +1,90 @@
+.section_menu {
+  padding-bottom: 32px;
+  background-color: $bg_content;
+  @include respond(md) {
+    background-color: $lightCream;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .restaurant_menu_title {
+    font-family: "Times New Roman";
+    font-weight: 700;
+    font-size: 32px;
+    color: $color_black;
+    margin-bottom: 32px;
+  }
+
+  .restaurant_menu {
+    @include respond(md) {
+      display: flex;
+      gap: 88px;
+    }
+    @include respond(lg) {
+      gap: 140px;
+    }
+  }
+
+  .restaurant_menu__part {
+    flex-basis: 50%;
+  }
+
+  .restaurant_menu__list {
+    margin-bottom: 16px;
+  }
+
+  .restaurant_menu_category {
+    font-family: "Times New Roman";
+    font-weight: 700;
+    font-size: 20px;
+    color: $color_black;
+    margin-bottom: 16px;
+  }
+  .restaurant_menu__item__name {
+    font-family: "MontserratRegular";
+    font-size: 14px;
+    color: $color_black;
+    letter-spacing: 0.02em;
+  }
+  .restaurant_menu__item__description {
+    font-family: "MontserratRegular";
+    font-size: 10px;
+    color: $color_black;
+    letter-spacing: 0.02em;
+  }
+  .restaurant_menu__item__weight {
+    font-family: "MontserratRegular";
+    letter-spacing: 0.02em;
+    font-size: 14px;
+    color: $color_black;
+  }
+  .restaurant_menu__item__price {
+    font-family: "MontserratBold";
+    font-size: 14px;
+    color: $color_black;
+    letter-spacing: 0.02em;
+  }
+  .restaurant_menu__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+    & > .restaurant_menu__item__dish {
+      width: 220px;
+    }
+  }
+  .btn {
+    display: block;
+    margin-top: 32px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: $color_black;
+    border-color: $entry_color;
+    @include respond(md) {
+      margin-top: 40px;
+      margin-right: 0;
+    }
+    @include respond(md) {
+      margin-top: 32px;
+    }
+  }
+}
