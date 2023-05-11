@@ -60,17 +60,16 @@
       }
       & > .restaurant_item__content {
         width: 258px;
-        @include respond(md) {
-          width: 419px;
-        }
-        @include respond(md) {
-          width: 518px;
-        }
         margin-bottom: 28px;
         @include respond(md) {
+          width: 419px;
           display: flex;
           flex-direction: column;
+          justify-content: center;
           margin-bottom: 0;
+        }
+        @include respond(lg) {
+          width: 518px;
         }
       }
       & > .restaurant_text {

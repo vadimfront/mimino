@@ -1,0 +1,12 @@
+.restaurant_page {
+  background-image: linear-gradient(rgb(0, 0, 0, 0.65), rgb(0, 0, 0, 0.65)),
+    url("../images/hero_restaurant_mobile.jpg");
+  @include respond(md) {
+    background-image: linear-gradient(rgb(0, 0, 0, 0.65), rgb(0, 0, 0, 0.65)),
+      url("../images/hero_restaurant_tablet.jpg");
+  }
+  @include respond(md) {
+    background-image: linear-gradient(rgb(0, 0, 0, 0.65), rgb(0, 0, 0, 0.65)),
+      url("../images/hero_restaurant_desktop.jpg");
+  }
+}
