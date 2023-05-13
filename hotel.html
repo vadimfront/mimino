@@ -8,10 +8,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/mimino/restaurant.52c93119.css">
+    <link rel="stylesheet" href="/mimino/hotel.d79c3458.css">
     <script type="module" src="/mimino/index.db32f7cf.js"></script><script src="/mimino/index.dd49b081.js" nomodule="" defer=""></script>
   </head>
-  <body class="restaurant_page">
+  <body>
     <!-- ❗️❗️❗️ Add partials like so for every page -->
     <header class="header">
   <div class="container">
@@ -29,7 +29,7 @@
         </a>
       </li>
       <li class="header_list__item">
-        <a class="header_list__link" href="#">Готель</a>
+        <a class="header_list__link" href="/mimino/hotel.html">Готель</a>
       </li>
       <li class="header_list__item">
         <a class="header_list__contact" href="tel:+">
@@ -66,9 +66,9 @@
   </div>
 </header>
 
-    <section class="hero">
+    <section class="hero hotel_section">
   <div class="container">
-    <address class="hero_address">
+    <address class="hero_address desktop_hidden">
       <svg class="icon location_icon">
         <use href="/mimino/icons.4ade4290.svg#icon-location"></use>
       </svg>
@@ -80,6 +80,38 @@
       <h2 class="hero_sub_title">Готель</h2>
     </div>
     <div class="hero_module">
+      <div class="hero_module__inner">
+        <address class="hero_address mobile_hidden">
+          <svg class="icon location_icon">
+            <use href="/mimino/icons.4ade4290.svg#icon-location"></use>
+          </svg>
+          Україна, м. Полтава,<br>
+          вул. Маршала Бірюзова, 15
+        </address>
+        <ul class="hero_social desktop_hidden">
+          <li class="hero_social_item">
+            <a href="#">
+              <svg class="icon">
+                <use href="/mimino/icons.4ade4290.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="hero_social_item">
+            <a href="#">
+              <svg class="icon">
+                <use href="/mimino/icons.4ade4290.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="hero_social_item">
+            <a href="#">
+              <svg class="icon">
+                <use href="/mimino/icons.4ade4290.svg#icon-telegram"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
       <div class="hero_module__buttons">
         <button class="btn open_modal" type="button" data-modal-id="#modal_room">
           Забронювати столик
@@ -88,29 +120,261 @@
           Забронювати номер
         </button>
       </div>
-      <ul class="hero_social">
-        <li class="hero_social_item">
-          <a href="#">
-            <svg class="icon">
-              <use href="/mimino/icons.4ade4290.svg#icon-instagram"></use>
+    </div>
+  </div>
+</section>
+
+    <section class="room_section deluxe_room">
+  <div class="container">
+    <div class="room_section__top offset_top">
+      <div class="room_section__content">
+        <p class="room_section__content__headline">Amet minim mollit non</p>
+        <p class="room_section__content__logo">MIMIHO</p>
+        <h2 class="room_section__content__title">ДВОМІСНИЙ НОМЕР люкс</h2>
+        <p class="room_section__content__description">
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+          sint. Velit officia consequat duis enim velit mollit. Exercitation
+          veniam consequat sunt nostrud amet.
+        </p>
+      </div>
+      <picture>
+        <source media="(max-width: 1023px)" srcset="/mimino/restaurant_first_mobile.4ed5da61.jpg">
+        <source media="(max-width: 1279px)" srcset="/mimino/restaurant_first_tablet.65a0987d.jpg">
+        <source media="(min-width: 1281px)" srcset="/mimino/restaurant_first_desktop.44be1148.jpg">
+        <img class="room_section__img" src="/mimino/restaurant_first_mobile.4ed5da61.jpg" alt="Image">
+      </picture>
+    </div>
+    <div class="room_section__bottom">
+      <div class="swiper swiper_left">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <picture>
+              <source media="(max-width: 1023px)" srcset="/mimino/thirdSlideMobile.490fef36.jpg">
+              <source media="(max-width: 1279px)" srcset="/mimino/thirdSlideTablet.fedf5504.jpg">
+              <source media="(min-width: 1281px)" srcset="/mimino/thirdSlideDesktop.fedf5504.jpg">
+              <img src="/mimino/thirdSlideMobile.490fef36.jpg" alt="slide image">
+            </picture>
+          </div>
+          <div class="swiper-slide">
+            <picture>
+              <source media="(max-width: 1023px)" srcset="/mimino/thirdSlide2Mobile.bac1efaa.jpg">
+              <source media="(max-width: 1279px)" srcset="/mimino/thirdSlide2Tablet.5dbd179f.jpg">
+              <source media="(min-width: 1281px)" srcset="/mimino/thirdSlide2Desktop.5dbd179f.jpg">
+              <img src="/mimino/thirdSlide2Mobile.bac1efaa.jpg" alt="slide image">
+            </picture>
+          </div>
+          <div class="swiper-slide">
+            <picture>
+              <source media="(max-width: 1023px)" srcset="/mimino/thirdSlide3Mobile.789c4b80.jpg">
+              <source media="(max-width: 1279px)" srcset="/mimino/thirdSlide3Tablet.34634b9e.jpg">
+              <source media="(min-width: 1281px)" srcset="/mimino/thirdSlide3Desktop.34634b9e.jpg">
+              <img src="/mimino/thirdSlide3Mobile.789c4b80.jpg" alt="slide image">
+            </picture>
+          </div>
+          <div class="swiper-slide">
+            <picture>
+              <source media="(max-width: 1023px)" srcset="/mimino/thirdSlide4Mobile.e2ce026e.jpg">
+              <source media="(max-width: 1279px)" srcset="/mimino/thirdSlide4Tablet.1e5266c1.jpg">
+              <source media="(min-width: 1281px)" srcset="/mimino/thirdSlide4Desktop.1e5266c1.jpg">
+              <img src="/mimino/thirdSlide4Mobile.e2ce026e.jpg" alt="slide image">
+            </picture>
+          </div>
+          <div class="swiper-slide">
+            <picture>
+              <source media="(max-width: 1023px)" srcset="/mimino/thirdSlideMobile.490fef36.jpg">
+              <source media="(max-width: 1279px)" srcset="/mimino/thirdSlideTablet.fedf5504.jpg">
+              <source media="(min-width: 1281px)" srcset="/mimino/thirdSlideDesktop.fedf5504.jpg">
+              <img src="/mimino/thirdSlideMobile.490fef36.jpg" alt="slide image">
+            </picture>
+          </div>
+        </div>
+        <div class="swiper-pagination">
+          <button class="swiper-button-next">
+            <svg class="icon" height="32" width="32">
+              <use href="/mimino/icons.4ade4290.svg#icon-arrow_left"></use>
             </svg>
-          </a>
-        </li>
-        <li class="hero_social_item">
-          <a href="#">
-            <svg class="icon">
-              <use href="/mimino/icons.4ade4290.svg#icon-facebook"></use>
+          </button>
+          <button class="swiper-button-prev">
+            <svg class="icon" height="32" width="32">
+              <use href="/mimino/icons.4ade4290.svg#icon-arrow_right"></use>
             </svg>
-          </a>
-        </li>
-        <li class="hero_social_item">
-          <a href="#">
-            <svg class="icon">
-              <use href="/mimino/icons.4ade4290.svg#icon-telegram"></use>
+          </button>
+        </div>
+      </div>
+      <div class="room_section__button">
+        <a class="btn" href="#">Детальніше</a>
+        <button class="btn" type="button">Переглянути ціни</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section class="room_section triple_room">
+  <div class="container">
+    <div class="room_section__top offset_top">
+      <div class="room_section__content">
+        <p class="room_section__content__headline">Amet minim mollit non</p>
+        <p class="room_section__content__logo">MIMIHO</p>
+        <h2 class="room_section__content__title">ТРЬОХМІСНИЙ НОМЕР</h2>
+        <p class="room_section__content__description">
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+          sint. Velit officia consequat duis enim velit mollit. Exercitation
+          veniam consequat sunt nostrud amet.
+        </p>
+      </div>
+      <picture>
+        <source media="(max-width: 1023px)" srcset="/mimino/restaurant_first_mobile.4ed5da61.jpg">
+        <source media="(max-width: 1279px)" srcset="/mimino/restaurant_first_tablet.65a0987d.jpg">
+        <source media="(min-width: 1281px)" srcset="/mimino/restaurant_first_desktop.44be1148.jpg">
+        <img class="room_section__img" src="/mimino/restaurant_first_mobile.4ed5da61.jpg" alt="Image">
+      </picture>
+    </div>
+    <div class="room_section__bottom">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <picture>
+              <source media="(max-width: 1023px)" srcset="/mimino/thirdSlideMobile.490fef36.jpg">
+              <source media="(max-width: 1279px)" srcset="/mimino/thirdSlideTablet.fedf5504.jpg">
+              <source media="(min-width: 1281px)" srcset="/mimino/thirdSlideDesktop.fedf5504.jpg">
+              <img src="/mimino/thirdSlideMobile.490fef36.jpg" alt="slide image">
+            </picture>
+          </div>
+          <div class="swiper-slide">
+            <picture>
+              <source media="(max-width: 1023px)" srcset="/mimino/thirdSlide2Mobile.bac1efaa.jpg">
+              <source media="(max-width: 1279px)" srcset="/mimino/thirdSlide2Tablet.5dbd179f.jpg">
+              <source media="(min-width: 1281px)" srcset="/mimino/thirdSlide2Desktop.5dbd179f.jpg">
+              <img src="/mimino/thirdSlide2Mobile.bac1efaa.jpg" alt="slide image">
+            </picture>
+          </div>
+          <div class="swiper-slide">
+            <picture>
+              <source media="(max-width: 1023px)" srcset="/mimino/thirdSlide3Mobile.789c4b80.jpg">
+              <source media="(max-width: 1279px)" srcset="/mimino/thirdSlide3Tablet.34634b9e.jpg">
+              <source media="(min-width: 1281px)" srcset="/mimino/thirdSlide3Desktop.34634b9e.jpg">
+              <img src="/mimino/thirdSlide3Mobile.789c4b80.jpg" alt="slide image">
+            </picture>
+          </div>
+          <div class="swiper-slide">
+            <picture>
+              <source media="(max-width: 1023px)" srcset="/mimino/thirdSlide4Mobile.e2ce026e.jpg">
+              <source media="(max-width: 1279px)" srcset="/mimino/thirdSlide4Tablet.1e5266c1.jpg">
+              <source media="(min-width: 1281px)" srcset="/mimino/thirdSlide4Desktop.1e5266c1.jpg">
+              <img src="/mimino/thirdSlide4Mobile.e2ce026e.jpg" alt="slide image">
+            </picture>
+          </div>
+          <div class="swiper-slide">
+            <picture>
+              <source media="(max-width: 1023px)" srcset="/mimino/thirdSlideMobile.490fef36.jpg">
+              <source media="(max-width: 1279px)" srcset="/mimino/thirdSlideTablet.fedf5504.jpg">
+              <source media="(min-width: 1281px)" srcset="/mimino/thirdSlideDesktop.fedf5504.jpg">
+              <img src="/mimino/thirdSlideMobile.490fef36.jpg" alt="slide image">
+            </picture>
+          </div>
+        </div>
+        <div class="swiper-pagination">
+          <button class="swiper-button-next">
+            <svg class="icon" height="32" width="32">
+              <use href="/mimino/icons.4ade4290.svg#icon-arrow_left"></use>
             </svg>
-          </a>
-        </li>
-      </ul>
+          </button>
+          <button class="swiper-button-prev">
+            <svg class="icon" height="32" width="32">
+              <use href="/mimino/icons.4ade4290.svg#icon-arrow_right"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="room_section__button">
+        <a class="btn" href="#">Детальніше</a>
+        <button class="btn" type="button">Переглянути ціни</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section class="room_section standard-room">
+  <div class="container">
+    <div class="room_section__top offset_top">
+      <div class="room_section__content">
+        <p class="room_section__content__headline">Amet minim mollit non</p>
+        <p class="room_section__content__logo">MIMIHO</p>
+        <h2 class="room_section__content__title">ДВОМІСНИЙ НОМЕР</h2>
+        <p class="room_section__content__description">
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+          sint. Velit officia consequat duis enim velit mollit. Exercitation
+          veniam consequat sunt nostrud amet.
+        </p>
+      </div>
+      <picture>
+        <source media="(max-width: 1023px)" srcset="/mimino/restaurant_first_mobile.4ed5da61.jpg">
+        <source media="(max-width: 1279px)" srcset="/mimino/restaurant_first_tablet.65a0987d.jpg">
+        <source media="(min-width: 1281px)" srcset="/mimino/restaurant_first_desktop.44be1148.jpg">
+        <img class="room_section__img" src="/mimino/restaurant_first_mobile.4ed5da61.jpg" alt="Image">
+      </picture>
+    </div>
+    <div class="room_section__bottom">
+      <div class="swiper swiper_left">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <picture>
+              <source media="(max-width: 1023px)" srcset="/mimino/thirdSlideMobile.490fef36.jpg">
+              <source media="(max-width: 1279px)" srcset="/mimino/thirdSlideTablet.fedf5504.jpg">
+              <source media="(min-width: 1281px)" srcset="/mimino/thirdSlideDesktop.fedf5504.jpg">
+              <img src="/mimino/thirdSlideMobile.490fef36.jpg" alt="slide image">
+            </picture>
+          </div>
+          <div class="swiper-slide">
+            <picture>
+              <source media="(max-width: 1023px)" srcset="/mimino/thirdSlide2Mobile.bac1efaa.jpg">
+              <source media="(max-width: 1279px)" srcset="/mimino/thirdSlide2Tablet.5dbd179f.jpg">
+              <source media="(min-width: 1281px)" srcset="/mimino/thirdSlide2Desktop.5dbd179f.jpg">
+              <img src="/mimino/thirdSlide2Mobile.bac1efaa.jpg" alt="slide image">
+            </picture>
+          </div>
+          <div class="swiper-slide">
+            <picture>
+              <source media="(max-width: 1023px)" srcset="/mimino/thirdSlide3Mobile.789c4b80.jpg">
+              <source media="(max-width: 1279px)" srcset="/mimino/thirdSlide3Tablet.34634b9e.jpg">
+              <source media="(min-width: 1281px)" srcset="/mimino/thirdSlide3Desktop.34634b9e.jpg">
+              <img src="/mimino/thirdSlide3Mobile.789c4b80.jpg" alt="slide image">
+            </picture>
+          </div>
+          <div class="swiper-slide">
+            <picture>
+              <source media="(max-width: 1023px)" srcset="/mimino/thirdSlide4Mobile.e2ce026e.jpg">
+              <source media="(max-width: 1279px)" srcset="/mimino/thirdSlide4Tablet.1e5266c1.jpg">
+              <source media="(min-width: 1281px)" srcset="/mimino/thirdSlide4Desktop.1e5266c1.jpg">
+              <img src="/mimino/thirdSlide4Mobile.e2ce026e.jpg" alt="slide image">
+            </picture>
+          </div>
+          <div class="swiper-slide">
+            <picture>
+              <source media="(max-width: 1023px)" srcset="/mimino/thirdSlideMobile.490fef36.jpg">
+              <source media="(max-width: 1279px)" srcset="/mimino/thirdSlideTablet.fedf5504.jpg">
+              <source media="(min-width: 1281px)" srcset="/mimino/thirdSlideDesktop.fedf5504.jpg">
+              <img src="/mimino/thirdSlideMobile.490fef36.jpg" alt="slide image">
+            </picture>
+          </div>
+        </div>
+        <div class="swiper-pagination">
+          <button class="swiper-button-next">
+            <svg class="icon" height="32" width="32">
+              <use href="/mimino/icons.4ade4290.svg#icon-arrow_left"></use>
+            </svg>
+          </button>
+          <button class="swiper-button-prev">
+            <svg class="icon" height="32" width="32">
+              <use href="/mimino/icons.4ade4290.svg#icon-arrow_right"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="room_section__button">
+        <a class="btn" href="#">Детальніше</a>
+        <button class="btn" type="button">Переглянути ціни</button>
+      </div>
     </div>
   </div>
 </section>
