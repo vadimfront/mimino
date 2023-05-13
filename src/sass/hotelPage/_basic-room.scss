@@ -1,0 +1,116 @@
+.room_section {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  background-color: $bg_content;
+  @include respond(md) {
+    padding-bottom: 52px;
+  }
+  .offset_top {
+    @include respond(md) {
+      margin-top: -48px;
+    }
+  }
+}
+
+.room_section__top {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 26px;
+  @include respond(md) {
+    gap: 48px;
+  }
+}
+
+.room_section__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  @include respond(md) {
+    width: 432px;
+  }
+  @include respond(lg) {
+    width: 502px;
+  }
+}
+
+.room_section__content__headline {
+  color: #b4b4b4;
+  margin-bottom: 8px;
+  font-family: Times New Roman;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.15;
+  @include respond(md) {
+    font-size: 32px;
+    margin-bottom: 4px;
+  }
+}
+.room_section__content__logo {
+  letter-spacing: 0.3em;
+  color: #494848;
+  margin-bottom: 8px;
+  font-family: filmP3;
+  font-size: 40px;
+  line-height: 1.1;
+  @include respond(md) {
+    font-size: 64px;
+    margin-bottom: 62px;
+  }
+}
+
+.room_section__content__title {
+  margin-bottom: 12px;
+  font-family: "Times New Roman";
+  font-weight: 700;
+  font-size: 24px;
+  color: $color_black;
+  @include respond(md) {
+    font-size: 30px;
+  }
+  @include respond(lg) {
+    font-size: 36px;
+  }
+}
+
+.room_section__content__description {
+  margin-bottom: 32px;
+  @include respond(md) {
+    font-size: 16px;
+  }
+}
+
+.room_section__img {
+  display: block;
+  margin-left: auto;
+  margin-bottom: 32px;
+  box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+  @include respond(md) {
+    margin-bottom: 0;
+  }
+}
+
+.room_section__bottom {
+  @include respond(md) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .swiper {
+    margin-top: 32px;
+  }
+}
+
+.room_section__button {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
+  gap: 16px;
+  margin-top: 20px;
+  & > .btn {
+    background-color: $color_black;
+  }
+  & > a.btn {
+    text-align: center;
+  }
+}

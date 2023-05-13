@@ -1,0 +1,12 @@
+.hotel_section {
+  background-image: linear-gradient(rgb(0, 0, 0, 0.65), rgb(0, 0, 0, 0.65)),
+    url("../images/hotel_hero_mobile.jpg");
+  @include respond(md) {
+    background-image: linear-gradient(rgb(0, 0, 0, 0.65), rgb(0, 0, 0, 0.65)),
+      url("../images/hotel_hero_tablet.jpg");
+  }
+  @include respond(md) {
+    background-image: linear-gradient(rgb(0, 0, 0, 0.65), rgb(0, 0, 0, 0.65)),
+      url("../images/hotel_hero_desktop.jpg");
+  }
+}

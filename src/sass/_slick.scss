@@ -2,20 +2,22 @@
   width: calc(100% - 34px);
   margin-top: 15px;
   margin-right: 0;
-  padding-top: 16px;
-  padding-left: 13px;
   @include respond(md) {
-    width: 426px;
+    width: 390px;
   }
   @include respond(lg) {
-    width: 548px;
+    width: 510px;
   }
 }
 
 .swiper-slide {
+  position: relative;
   width: 254px;
   height: 254px;
-  margin-right: 25px;
+  padding-top: 10px;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-bottom: 12px;
   @include respond(md) {
     width: 194px;
     height: 194px;
@@ -31,7 +33,7 @@
 }
 
 .swiper-slide img {
-  box-shadow: 2px 2px 12.5px 2px rgba(0, 0, 0, 0.25);
+  box-shadow: 2px 2px 12px 2px rgba(0, 0, 0, 0.25);
   border-radius: 2px;
 }
 
@@ -40,6 +42,7 @@
   display: flex;
   gap: 30px;
   margin-top: 20px;
+  padding-left: 12px;
   cursor: pointer;
   & > button {
     background-color: transparent;

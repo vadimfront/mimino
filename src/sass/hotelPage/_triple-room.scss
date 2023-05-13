@@ -1,0 +1,27 @@
+.triple_room {
+  background-color: $lightCream;
+  .room_section__content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: flex-end;
+  }
+
+  .swiper {
+    @include respond(md) {
+      margin-right: auto;
+      margin-left: 0;
+    }
+    .swiper-pagination {
+      justify-content: flex-end;
+      @include respond(md) {
+        justify-content: flex-start;
+      }
+    }
+  }
+
+  .room_section__img {
+    margin-left: 0;
+    margin-right: auto;
+  }
+}

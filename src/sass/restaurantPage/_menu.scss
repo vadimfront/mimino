@@ -79,6 +79,13 @@
     margin-right: auto;
     background-color: $color_black;
     border-color: $entry_color;
+    &:hover,
+    &:focus {
+      color: #f3c653;
+      border-color: #f3c653;
+      background-color: $white;
+    }
+
     @include respond(md) {
       margin-top: 40px;
       margin-right: 0;
