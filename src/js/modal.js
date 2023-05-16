@@ -2,6 +2,7 @@ import $ from "jquery";
 
 $(function () {
   function openModal(modalId) {
+    console.log(modalId);
     $(modalId).addClass("active_modal");
   }
 
@@ -10,6 +11,7 @@ $(function () {
   }
 
   $(".open_modal").on("click", function () {
+    console.log("open_modal");
     const modalId = $(this).data("modal-id");
     openModal(modalId);
   });
