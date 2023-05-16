@@ -88,10 +88,15 @@
     @include respond(md) {
       width: 236px;
       margin-top: 0;
-      padding-bottom: 68px;
+      padding-bottom: 53px;
     }
-    & > .btn:first-child {
-      margin-bottom: 16px;
+    & > .btn {
+      width: 236px;
+      padding-left: 15px;
+      padding-right: 15px;
+      &:first-child {
+        margin-bottom: 16px;
+      }
     }
   }
 }

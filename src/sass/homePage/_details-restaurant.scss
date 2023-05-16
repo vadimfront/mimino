@@ -84,9 +84,12 @@
     margin-top: 16px;
     @include respond(md) {
       margin-top: 0;
-      padding-bottom: 54px;
+      padding-bottom: 53px;
     }
     & > .btn {
+      width: 236px;
+      padding-left: 15px;
+      padding-right: 15px;
       @include respond(md) {
         display: block;
       }
