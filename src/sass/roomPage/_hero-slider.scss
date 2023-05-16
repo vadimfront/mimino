@@ -1,0 +1,170 @@
+.room_hero {
+  & > .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .room_hero__address {
+    position: relative;
+    width: 210px;
+    padding: 8px 3px 8px 34px;
+    border: 1px solid rgba(243, 198, 83, 0.7);
+    border-radius: 2px;
+    font-family: "MontserratRegular";
+    line-height: 1.25;
+    letter-spacing: 0.01em;
+    color: $address_color;
+    z-index: 99;
+    @include respond(md) {
+      width: 285px;
+      font-size: 16px;
+    }
+    &.mobile_hidden {
+      display: none;
+      @include respond(md) {
+        display: block;
+      }
+    }
+    &.desktop_hidden {
+      @include respond(md) {
+        display: none;
+      }
+    }
+    & > .location_icon {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 5px;
+      margin: auto 0;
+      height: 20px;
+      width: 20px;
+      fill: $accentedTextColor;
+      @include respond(md) {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+  .hero_social {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+    @include respond(md) {
+      flex-direction: row;
+    }
+    .icon {
+      height: 24px;
+      width: 24px;
+      fill: $accentedTextColor;
+      transition-property: fill;
+      transition-duration: 0.25s;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .hero_social_item {
+      & > a:hover,
+      & > a:focus {
+        & > .icon {
+          fill: $accented_yellow;
+        }
+      }
+    }
+  }
+}
+.hero-swiper {
+  .swiper-slide {
+    height: 842px;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding-bottom: 17px;
+    &:nth-child(1) {
+      background-image: url("../images/sliders/room_slide1_mobile.jpg");
+      @include respond(sm) {
+        background-image: url("../images/sliders/room_slide1_tablet.jpg");
+      }
+      @include respond(lg) {
+        background-image: url("../images/sliders/room_slide1_desktop.jpg");
+      }
+    }
+    &:nth-child(2) {
+      background-image: url("../images/sliders/room_slide2_mobile.jpg");
+      @include respond(sm) {
+        background-image: url("../images/sliders/room_slide2_tablet.jpg");
+      }
+      @include respond(lg) {
+        background-image: url("../images/sliders/room_slide2_desktop.jpg");
+      }
+    }
+    @include respond(md) {
+      height: 720px;
+    }
+    & > .container {
+      height: 100%;
+      display: flex;
+      align-items: flex-end;
+      flex-wrap: wrap;
+      & > .room_hero__address {
+        margin-top: 65px;
+        margin-left: auto;
+        margin-bottom: auto;
+      }
+    }
+  }
+  .swiper-pagination {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
+    z-index: 99;
+    & > .container {
+      display: flex;
+      justify-content: space-between;
+    }
+    & .swiper-button-next,
+    & .swiper-button-prev {
+      background: rgba(0, 0, 0, 0.65);
+      border: none;
+      fill: $accentedTextColor;
+      cursor: pointer;
+    }
+  }
+}
+.slide__content {
+  position: relative;
+  width: 100%;
+  .slide__title {
+    font-family: "Times New Roman";
+    font-weight: 700;
+    font-size: 28px;
+    letter-spacing: 0.05em;
+    color: $white;
+    margin-bottom: 14px;
+    @include respond(md) {
+      font-size: 36px;
+    }
+  }
+  .slide__description {
+    width: 325px;
+    color: $white;
+    margin-bottom: 17px;
+    @include respond(md) {
+      width: 400px;
+      font-size: 16px;
+    }
+  }
+  .slide__content__module {
+    display: flex;
+    gap: 72px;
+    align-items: center;
+  }
+  .btn {
+    @include respond(md) {
+      margin-top: -40px;
+      margin-left: auto;
+    }
+  }
+}

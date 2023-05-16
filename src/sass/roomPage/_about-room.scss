@@ -1,0 +1,85 @@
+.about_room {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  .about_room__title {
+    font-family: "Times New Roman";
+    font-weight: 400;
+    font-size: 32px;
+    color: $color_black;
+    margin-bottom: 16px;
+  }
+  .about_room__text {
+    width: 384px;
+    font-family: "MontserratBold";
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    @include respond(md) {
+      width: 757px;
+    }
+  }
+  .btn_order {
+    display: block;
+    max-width: 384px;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 38px;
+    padding-right: 38px;
+    font-family: "MontserratMedium";
+    font-size: 20px;
+    color: $white;
+    background-color: $color_black;
+    border: 1px solid $accentedTextColor;
+    @include respond(md) {
+      margin-right: 0;
+    }
+  }
+  .about_room___back {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    font-size: 16px;
+    color: $accented_yellow;
+    fill: $accented_yellow;
+    margin-top: 20px;
+    @include respond(md) {
+      margin-top: 32px;
+      justify-content: flex-end;
+    }
+  }
+}
+
+.about_room__list__item {
+  margin-top: 32px;
+  &.two_blocks {
+    @include respond(md) {
+      display: flex;
+      align-items: flex-end;
+      gap: 80px;
+    }
+    @include respond(md) {
+      gap: 159px;
+    }
+  }
+  .about_room__col__title {
+    font-family: "Times New Roman";
+    font-weight: 700;
+    font-size: 24px;
+    color: $color_black;
+    margin-bottom: 16px;
+  }
+  .about_room__col__text {
+    width: 384px;
+    font-family: "MontserratBold";
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    margin-bottom: 16px;
+    @include respond(md) {
+      width: 439px;
+    }
+    @include respond(lg) {
+      width: 400px;
+    }
+  }
+}

@@ -6,6 +6,7 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: $textColor;
+  background: #fffdee;
 }
 
 h1,
@@ -45,6 +46,7 @@ address {
 }
 
 .container {
+  width: 100%;
   max-width: 414px;
   padding-left: 15px;
   padding-right: 15px;
@@ -58,7 +60,7 @@ address {
 }
 
 .btn {
-  width: 236px;
+  max-width: 236px;
   font-family: "MontserratBold";
   font-size: 16px;
   line-height: 1.25;
