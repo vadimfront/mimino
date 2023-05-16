@@ -207,7 +207,6 @@ address {
 }
 
 .btn {
-  width: 236px;
   color: #f3c653;
   letter-spacing: .02em;
   cursor: pointer;
@@ -215,7 +214,7 @@ address {
   background-image: linear-gradient(#0006, #0006);
   border: 2px solid #fff;
   border-radius: 25px;
-  padding: 12px 15px;
+  padding: 12px 35px;
   font-family: MontserratBold;
   font-size: 16px;
   line-height: 1.25;
@@ -1058,9 +1057,17 @@ address {
 @media only screen and (min-width: 1024px) {
   .details_restaurant .button_wrapper {
     margin-top: 0;
-    padding-bottom: 54px;
+    padding-bottom: 53px;
   }
+}
 
+.details_restaurant .button_wrapper > .btn {
+  width: 236px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media only screen and (min-width: 1024px) {
   .details_restaurant .button_wrapper > .btn {
     display: block;
   }
@@ -1193,8 +1200,14 @@ address {
   .details_hotel .button_wrapper {
     width: 236px;
     margin-top: 0;
-    padding-bottom: 68px;
+    padding-bottom: 53px;
   }
+}
+
+.details_hotel .button_wrapper > .btn {
+  width: 236px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .details_hotel .button_wrapper > .btn:first-child {
@@ -1886,15 +1899,13 @@ address {
 }
 
 .about_room .btn_order {
-  max-width: 384px;
+  width: 384px;
   color: #fff;
   background-color: #000;
   border: 1px solid #f3c653;
   margin-top: 40px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 38px;
-  padding-right: 38px;
   font-family: MontserratMedium;
   font-size: 20px;
   display: block;
@@ -2381,4 +2392,4 @@ address {
   }
 }
 
-/*# sourceMappingURL=index.f7b08530.css.map */
+/*# sourceMappingURL=index.d941d260.css.map */
