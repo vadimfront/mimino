@@ -7,6 +7,10 @@
   background-size: cover;
   @include respond(md) {
     height: 720px;
+    padding-bottom: 18px;
+  }
+  @include respond(lg) {
+    height: 720px;
     padding-bottom: 65px;
   }
   &.basic_hero {
@@ -23,6 +27,8 @@
   }
   & > .container {
     height: 100%;
+    display: flex;
+    flex-direction: column;
     @include respond(md) {
       display: flex;
       flex-direction: column;

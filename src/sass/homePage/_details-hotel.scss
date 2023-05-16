@@ -36,13 +36,15 @@
       gap: 29px;
     }
     & > .swiper {
+      margin-left: 0;
       @include respond(md) {
         width: 100%;
         padding-left: 13px;
         padding-right: 0;
-        padding-left: 0;
       }
       .swiper-slide {
+        padding: 0;
+        margin-right: 24px;
         @include respond(md) {
           width: 254px;
           height: 254px;
@@ -86,7 +88,7 @@
     @include respond(md) {
       width: 236px;
       margin-top: 0;
-      padding-bottom: 54px;
+      padding-bottom: 68px;
     }
     & > .btn:first-child {
       margin-bottom: 16px;
