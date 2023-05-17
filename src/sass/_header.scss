@@ -13,10 +13,13 @@
   }
   .logo {
     font-family: "filmP3";
-    font-size: 36px;
+    font-size: 31px;
     color: $white;
     letter-spacing: 0.3em;
     line-height: 1.08;
+    @include respond(sm) {
+      font-size: 36px;
+    }
     @include respond(md) {
       font-size: 40px;
     }
@@ -27,12 +30,15 @@
     align-items: center;
     gap: 6px;
     font-family: "MontserratMedium";
-    font-size: 16px;
+    font-size: 13px;
     line-height: 1.25;
     color: $accentedTextColor;
     transition-property: color;
     transition-duration: 0.25s;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @include respond(sm) {
+      font-size: 16px;
+    }
     &:hover,
     &:focus {
       color: $accented_yellow;
@@ -75,8 +81,11 @@
   }
   .header_list {
     display: flex;
-    gap: 20px;
+    gap: 4px;
     align-items: center;
+    @include respond(sm) {
+      gap: 20px;
+    }
     & > .header_list__item:nth-child(2) {
       @include respond(lg) {
         margin-right: 72px;
