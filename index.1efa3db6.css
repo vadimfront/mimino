@@ -1069,7 +1069,10 @@ address {
 
 .details_restaurant .button_wrapper {
   text-align: center;
+  flex-flow: column wrap;
+  align-content: center;
   margin-top: 16px;
+  display: flex;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -1211,7 +1214,10 @@ address {
 
 .details_hotel .button_wrapper {
   text-align: center;
+  flex-flow: column wrap;
+  align-content: center;
   margin-top: 16px;
+  display: flex;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -2410,4 +2416,4 @@ address {
   }
 }
 
-/*# sourceMappingURL=index.9565d40b.css.map */
+/*# sourceMappingURL=index.1efa3db6.css.map */
