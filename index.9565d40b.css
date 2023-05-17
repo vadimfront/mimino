@@ -260,8 +260,14 @@ address {
   color: #fff;
   letter-spacing: .3em;
   font-family: filmP3;
-  font-size: 36px;
+  font-size: 31px;
   line-height: 1.08;
+}
+
+@media only screen and (min-width: 414px) {
+  .header .logo {
+    font-size: 36px;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -275,12 +281,18 @@ address {
   align-items: center;
   gap: 6px;
   font-family: MontserratMedium;
-  font-size: 16px;
+  font-size: 13px;
   line-height: 1.25;
   transition-property: color;
   transition-duration: .25s;
   transition-timing-function: cubic-bezier(.4, 0, .2, 1);
   display: flex;
+}
+
+@media only screen and (min-width: 414px) {
+  .header .header_list__link {
+    font-size: 16px;
+  }
 }
 
 .header .header_list__link:hover, .header .header_list__link:focus {
@@ -333,8 +345,14 @@ address {
 
 .header .header_list {
   align-items: center;
-  gap: 20px;
+  gap: 4px;
   display: flex;
+}
+
+@media only screen and (min-width: 414px) {
+  .header .header_list {
+    gap: 20px;
+  }
 }
 
 @media only screen and (min-width: 1280px) {
@@ -2392,4 +2410,4 @@ address {
   }
 }
 
-/*# sourceMappingURL=index.d941d260.css.map */
+/*# sourceMappingURL=index.9565d40b.css.map */
