@@ -83,6 +83,10 @@
     }
   }
   .button_wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
     text-align: center;
     margin-top: 16px;
     @include respond(md) {
