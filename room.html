@@ -116,7 +116,9 @@
                   </a>
                 </li>
               </ul>
-              <button class="btn" type="button">Переглянути ціни</button>
+              <button class="btn open_modal" type="button" data-modal-id="#modal_price">
+                Переглянути ціни
+              </button>
             </div>
           </div>
         </div>
@@ -168,7 +170,9 @@
                   </a>
                 </li>
               </ul>
-              <button class="btn" type="button">Переглянути ціни</button>
+              <button class="btn open_modal" type="button" data-modal-id="#modal_price">
+                Переглянути ціни
+              </button>
             </div>
           </div>
         </div>
@@ -258,8 +262,10 @@
         </p>
       </li>
     </ul>
-    <button class="btn btn_order" type="button">ОФОРМИТИ БРОНЮВАННЯ</button>
-    <a href="#" class="about_room___back">
+    <button class="btn btn_order open_modal" type="button" data-modal-id="#modal_price">
+      ОФОРМИТИ БРОНЮВАННЯ
+    </button>
+    <a href="/mimino/hotel.html" class="about_room___back">
       Повернутися до перегляду номерів
       <svg class="icon" height="24" width="24">
         <use href="/mimino/icons.4ade4290.svg#icon-arrow_right"></use>
@@ -267,6 +273,30 @@
     </a>
   </div>
 </section>
+
+    <div id="modal_price" class="modal">
+  <div class="modal_container">
+    <button class="modal_close" type="button">
+      <svg class="icon" width="24" height="24">
+        <use href="/mimino/icons.4ade4290.svg#icon-close"></use>
+      </svg>
+    </button>
+    <h3 class="modal_title">ЦІНИ НА НОМЕР</h3>
+    <p class="modal_room_types">Двомісний люкс</p>
+    <p class="modal_room_categoty">Категорія номеру</p>
+    <form class="room_price_modal">
+      <div class="form_group">
+        <input class="modal_input" type="c_number" name="c_number" id="c_number" placeholder="1">
+        <label class="modal_label" for="c_number">Категорія номеру</label>
+      </div>
+      <div class="form_group">
+        <input class="modal_input" id="price" type="text" name="price" placeholder="100">
+        <label class="modal_label" for="price">Кількість ночей</label>
+      </div>
+      <button class="modal_btn" type="submit">ЗАБРОНЮВАТИ НОМЕР</button>
+    </form>
+  </div>
+</div>
 
     <footer class="footer">
   <div class="container">
